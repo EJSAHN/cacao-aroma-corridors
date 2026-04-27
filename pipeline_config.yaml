@@ -1,0 +1,26 @@
+project:
+  raw_dir: data_raw
+  processed_dir: data_processed
+  results_dir: results
+  log_subdir: logs
+  normalized_subdir: normalized
+  report_subdir: reports
+  staging_subdir: staging
+
+analysis:
+  overlap_windows_bp: [0, 10000, 50000, 250000]
+  association_windows_bp: [0, 10000, 50000, 250000]
+  candidate_windows_bp: [0, 50000, 250000]
+  emit_detail_rows: true
+  max_detail_rows_per_sheet: 200000
+
+discovery:
+  include_archives: true
+  archive_member_extensions: [".xlsx", ".xls"]
+  file_extensions: [".xlsx", ".xls", ".zip", ".pdf"]
+
+excel:
+  freeze_header: true
+  autofilter: true
+  max_column_width: 60
+  min_column_width: 10
