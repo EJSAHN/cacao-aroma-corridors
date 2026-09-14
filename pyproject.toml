@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cacao-marker-harmonization"
+version = "3.0.0"
+description = "Reference-based cacao marker harmonization, positional representation and dosage-correlation analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Ezekiel Ahn"}]
+dependencies = ["numpy>=1.26", "pandas>=2.1", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+legacy-xls = ["xlrd>=2.0.1"]
+
+[project.scripts]
+cacao-marker-analysis = "cacao_marker_harmonization.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cacao_marker_harmonization = ["study.json"]
