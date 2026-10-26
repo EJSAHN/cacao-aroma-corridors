@@ -1,0 +1,57 @@
+CODE3 mathematical definitions and implementation evidence
+
+Given sample covariance V and nuisance columns C=[intercept,covariates], define
+W=V^+ and P=W-W C (C' W C)^+ C' W. Adjusted squared correlation is
+(x' P y)^2/[(x' P x)(y' P y)]. The code computes a factor T with P=T T'
+by eigendecomposition-based whitening and an orthogonal nuisance projection.
+Genotype rows multiply T; squared normalized inner products are evaluated.
+They are not centered a second time after transformation.
+
+V=I with an intercept gives ordinary squared Pearson correlation. Genetic PCs
+give squared partial correlations. PCs are continuous axes of genetic variation,
+not independently measured ancestral mixture proportions. Covariance and joint
+versions follow Mangin et al.2012, https://doi.org/10.1038/hdy.2011.73.
+
+KERNEL
+Background marker selection and test-chromosome exclusion occur outside this
+module. For marker-by-sample dosage D, p=mean(D)/2 and Z=D-2p. The relationship
+kernel is Z'Z/[2 sum p(1-p)], then normalized to mean diagonal1. This is a centered
+genomic relationship, not a pedigree estimate. PCs use Z/sqrt[2p(1-p)]. Both are
+invariant to flipping0 and2 at a marker; biological allele orientation is not
+inferred. Any regularization is explicit in the calling module's diagnostics.
+References: VanRaden2008, https://doi.org/10.3168/jds.2007-0980;
+Price et al.2006, https://doi.org/10.1038/ng1847.
+
+PRIMARY SOURCE VERIFICATION
+LDcorSV1.3.4 source inspected through the CRAN source mirror:
+https://github.com/cran/LDcorSV/blob/master/R/Measure.R2V.R
+ Git blob b92a6cac0141757cdd774735ee932e63342ed6a8
+https://github.com/cran/LDcorSV/blob/master/R/Measure.R2S.R
+ Git blob e82c236f059af218e64cc3b215efcee2dc2fe364
+https://github.com/cran/LDcorSV/blob/master/R/Measure.R2VS.R
+ Git blob 2b0cb01534ce0eeb8dc765e35680b1f1aa5cac5d
+https://github.com/cran/LDcorSV/blob/master/DESCRIPTION
+ Git blob 8c21abad4ae60eaeb40ac0e558b5dce54c18a7a5
+Authors' manual: https://aursiber.r-universe.dev/LDcorSV/doc/manual.html
+Author repository: https://gitlab.in2p3.fr/aursiber/ldcorsv
+
+The inspected package is GPL>=2. No R source is distributed or executed here.
+adjusted_math.py independently implements the mathematical definitions and is
+checked against Pearson, covariance Schur complements and direct GLS precision.
+
+EXPLICIT DIFFERENCES FROM LDCORSV DEFAULTS
+CODE3 uses a stated relative eigenvalue tolerance rather than an absolute1e-5
+cutoff. Minimum sample size remains50; zero residual variance is missing, not
+zero correlation. This is not a claim of bit-identical LDcorSV execution.
+
+Centered K has the intercept in its null space. The production covariance adds
+ridge*I and ones(n,n)/n. The second term affects only the intercept direction;
+after fitting an intercept it leaves the residual metric unchanged relative to
+K+ridge*I. Equivalence is independently tested with and without PC covariates.
+It prevents software eigenvalue thresholds from discarding an intercept direction
+whose eigenvalue would otherwise equal a very small ridge.
+
+Missing source values are rejected. CODE2 established complete A/M/C calls in
+the pinned matrices. No mean imputation or zero filling is performed. All dosage
+interpretations remain conditional; adjustment does not establish source coding,
+focal variant identity, causality, or breeding utility.

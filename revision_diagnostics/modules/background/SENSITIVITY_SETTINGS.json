@@ -1,0 +1,296 @@
+{
+  "seed": 1729,
+  "replicates": 1000,
+  "length_bins": [
+    3,
+    5,
+    10
+  ],
+  "gene_density_bins": [
+    2,
+    3,
+    5
+  ],
+  "gene_density_radius_bp": [
+    100000,
+    250000,
+    500000
+  ],
+  "primary_contrast_flank_bp": 50000,
+  "percentile_definition": "100 * (n_draws_below + 0.5 * n_draws_equal) / n_draws",
+  "quantile_method": "linear",
+  "sampling": "Without replacement within chromosome/biotype/length[/gene-density] strata; one draw shared across all panels, states, and flanks.",
+  "insufficient_strata": "Block entire target/model; no relaxation or candidate omission.",
+  "models": [
+    {
+      "model_id": "L3",
+      "model": "chromosome_biotype_length",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": null,
+      "gene_density_radius_bp": null,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3"
+    },
+    {
+      "model_id": "L3_D2_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D2_R100000"
+    },
+    {
+      "model_id": "L3_D2_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D2_R250000"
+    },
+    {
+      "model_id": "L3_D2_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D2_R500000"
+    },
+    {
+      "model_id": "L3_D3_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D3_R100000"
+    },
+    {
+      "model_id": "L3_D3_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D3_R250000"
+    },
+    {
+      "model_id": "L3_D3_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D3_R500000"
+    },
+    {
+      "model_id": "L3_D5_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D5_R100000"
+    },
+    {
+      "model_id": "L3_D5_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D5_R250000"
+    },
+    {
+      "model_id": "L3_D5_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 3,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L3_D5_R500000"
+    },
+    {
+      "model_id": "L5",
+      "model": "chromosome_biotype_length",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": null,
+      "gene_density_radius_bp": null,
+      "canonical": true,
+      "rng_label": "annotation-background:chromosome_biotype_length"
+    },
+    {
+      "model_id": "L5_D2_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D2_R100000"
+    },
+    {
+      "model_id": "L5_D2_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D2_R250000"
+    },
+    {
+      "model_id": "L5_D2_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D2_R500000"
+    },
+    {
+      "model_id": "L5_D3_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D3_R100000"
+    },
+    {
+      "model_id": "L5_D3_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 250000,
+      "canonical": true,
+      "rng_label": "annotation-background:chromosome_biotype_length_gene_density"
+    },
+    {
+      "model_id": "L5_D3_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D3_R500000"
+    },
+    {
+      "model_id": "L5_D5_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D5_R100000"
+    },
+    {
+      "model_id": "L5_D5_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D5_R250000"
+    },
+    {
+      "model_id": "L5_D5_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 5,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L5_D5_R500000"
+    },
+    {
+      "model_id": "L10",
+      "model": "chromosome_biotype_length",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": null,
+      "gene_density_radius_bp": null,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10"
+    },
+    {
+      "model_id": "L10_D2_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D2_R100000"
+    },
+    {
+      "model_id": "L10_D2_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D2_R250000"
+    },
+    {
+      "model_id": "L10_D2_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 2,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D2_R500000"
+    },
+    {
+      "model_id": "L10_D3_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D3_R100000"
+    },
+    {
+      "model_id": "L10_D3_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D3_R250000"
+    },
+    {
+      "model_id": "L10_D3_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 3,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D3_R500000"
+    },
+    {
+      "model_id": "L10_D5_R100000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 100000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D5_R100000"
+    },
+    {
+      "model_id": "L10_D5_R250000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 250000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D5_R250000"
+    },
+    {
+      "model_id": "L10_D5_R500000",
+      "model": "chromosome_biotype_length_gene_density",
+      "length_bins_requested": 10,
+      "gene_density_bins_requested": 5,
+      "gene_density_radius_bp": 500000,
+      "canonical": false,
+      "rng_label": "annotation-background-sensitivity:L10_D5_R500000"
+    }
+  ]
+}

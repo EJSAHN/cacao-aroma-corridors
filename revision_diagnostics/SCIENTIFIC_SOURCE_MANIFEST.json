@@ -1,0 +1,230 @@
+[
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/provenance_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "5adf607a44e8daef3256e08b1a7801e76a4ac79ab7d0b9c740ffe74ab499098f"
+  },
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/coordinate_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "a2fdba8168c7629629c6b00ac6d55eb37aab2d3dc8e0881885cf0c315b269c35"
+  },
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/methods_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "b49940c8b4ca7e2e43fa5ba5af1babf999879753539177ca73dd7d8e6cbf9f9d"
+  },
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/xlsx_read.py",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "1e725657097f22a400149af476ee23a12e0c3eb073fb9c63ea8bf7b20e62bde4"
+  },
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/baseline_lock.json",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "31884706828084859a258ac3a062308186cfb2221d390a71fd235700616bd537"
+  },
+  {
+    "stage": "harmonization",
+    "file": "modules/harmonization/baseline_study_config.json",
+    "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
+    "sha256": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/genotype_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/ld_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/biff8_read.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/xlsx_read.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "1e725657097f22a400149af476ee23a12e0c3eb073fb9c63ea8bf7b20e62bde4"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/test_genotype_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "065b284f5361ccaaa0481b7c5d773a14bc400bb1915670348dd32827764e0451"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/test_ld_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "c4b3e6c5fc78f210bd0b5ba2c5ebeb967d0b941b99ab2dc164f87b966413d704"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/CODING_EVIDENCE.txt",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "66d542650c8b79e5cb6aecc38132019a980f24b8fb71042e71e4f1f0e2dabcfc"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/baseline_lock.json",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "31884706828084859a258ac3a062308186cfb2221d390a71fd235700616bd537"
+  },
+  {
+    "stage": "genotypes",
+    "file": "modules/genotypes/baseline_study_config.json",
+    "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
+    "sha256": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/genotype_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/ld_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/biff8_read.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/xlsx_read.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "1e725657097f22a400149af476ee23a12e0c3eb073fb9c63ea8bf7b20e62bde4"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/adjusted_math.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "f02a3fae5bb8c4127f5b1b24036a861ab84ee4de1f90f08fe685dd2937b659d7"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/model_setup.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "ab09726eebc2f1215e2655db877afb98fbc99a071fe54bacab7a8257c78790fa"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/within_adjusted_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "b2626e3f69c40d7e9ca2e2dc83438a39a57d262fa2610e9413820e5157e730d3"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/cross_peak_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "5fcb3827ff847d9e89601eb863ed9e11ee2698d66aa15756e69bba0aabc22b4a"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/test_adjusted_math.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "6a9be0fb98a90bd09b512c711a7a547e1c648ee8e294fabf9d0a4ac75494bb87"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/test_model_setup.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "e7b17b5a101d3b0b0be8a4f5c85ba9788d03194fa41fe956e22bb6a0d141c1f1"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/test_within_adjusted.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "4415d4c7fe8ce19a7096bb3ba0d43ad3c9b9d7d9a66c51a875ffa174b4d61b2a"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/test_cross_peak_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "3f51ba6f694ff0c39a907433cdd62ebfb03363b2c1f0dd8208336cd384f31ba1"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/MODEL_SETTINGS.json",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "963823997f2de22985a44962b6d39ecfbed56413c8d84a347d73f87896962564"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/ADJUSTED_MATH_NOTES.txt",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "d5706723da24261bc3afcf5c5e77858bbc12fa54f59d28074a93ab74b2056315"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/baseline_lock.json",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "31884706828084859a258ac3a062308186cfb2221d390a71fd235700616bd537"
+  },
+  {
+    "stage": "adjusted_ld",
+    "file": "modules/adjusted_ld/baseline_study_config.json",
+    "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
+    "sha256": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/background_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "8126aaf1d0b52b85b791bd5c76308044ae00d06321cb25b2df4961169fafa2e7"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/test_background_audit.py",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "35a4876b2cfa8d592966fef6f81acf3716388c0523d3c45c9609bbdad3cac300"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/xlsx_read.py",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "1e725657097f22a400149af476ee23a12e0c3eb073fb9c63ea8bf7b20e62bde4"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/SENSITIVITY_SETTINGS.json",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "6b24371c0ee0c410c22fb26caeb7fa15a731c89393ddd37527d302c07e070f83"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/BACKGROUND_METHODS_NOTES.txt",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "0903e7120b967c8e9084a968b7214c5c5cf67542cb5b9b85a4edbd703eb21046"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/baseline_lock.json",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "7531b4f0f85b5f09ea70e6f79c5540ca132ad3a3736eb49b32cbb4273ccdaa8c"
+  },
+  {
+    "stage": "background",
+    "file": "modules/background/baseline_study_config.json",
+    "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
+    "sha256": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe"
+  }
+]

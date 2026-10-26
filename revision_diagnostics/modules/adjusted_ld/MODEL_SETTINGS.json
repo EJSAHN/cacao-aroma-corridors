@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "background_bin_bp": 100000,
+    "minimum_background_markers": 200,
+    "background_policy": "ONE_PER_100KB_BIN_AND_SOURCE_TAG_FAMILY",
+    "chromosome_policy": "LEAVE_TEST_CHROMOSOME_OUT",
+    "primary_kinship_ridge": 1e-06,
+    "sensitivity_kinship_ridge": 0.01,
+    "pc_counts": [
+      2,
+      5
+    ],
+    "kinship_scaling": "MEAN_DIAGONAL_ONE",
+    "intercept_stabilization": "PLUS_ONES_MATRIX_OVER_N_REMOVED_BY_GLS_INTERCEPT"
+  },
+  "methods": [
+    "RAW",
+    "PC2",
+    "PC5",
+    "V_RIDGE_1e_minus6",
+    "V_RIDGE_001",
+    "V_PC2_RIDGE_1e_minus6"
+  ],
+  "design_frozen_before_adjusted_results": true
+}

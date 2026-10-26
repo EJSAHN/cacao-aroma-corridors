@@ -1,0 +1,17 @@
+{
+  "analysis_relative": "cacao_marker_harmonization/results/analysis_20260913_165303_981545",
+  "source_relative": "cacao_aroma_project/data_raw",
+  "analysis_manifest_sha256": "1fadd27c28b133fd6995a1f6bff3af1f4e04e8164193b603dea38c62728cfd4e",
+  "analysis_files": {
+    "alignment_coverage/02_fixed_marker_cohorts.xlsx": "c1a26848e914ab192f4c108b25fb4c06845844502e45d28591bc57d8bbecebdf",
+    "alignment_coverage/03_fixed_query_sets.xlsx": "661cae12be76ffd59c32815c053ead6b478a9da216da83f69a6b6b27a4b6b1e4",
+    "alignment_coverage/06_matched_gene_background.xlsx": "affc913784d5b6f98ebf8e308478893d7808a5dd14f2ed3b7cd7fc5e0898b481",
+    "reference_mapping/04_reference_annotation.xlsx": "8d766da577b97de3203b151fa8bdbb13136d1664875282500a5496c515148fd0",
+    "source_data/03_candidate_units.xlsx": "ca9b859d0a3cf9bdafe3f73197bc103ef4e74ee4d41df44ca14d2b693f8dc44f",
+    "study_config.json": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe",
+    "validation/agreement.json": "5050e6c7fba8b7a6d7b6e30abb4445801df02d40a3e62093505d882ed6dc8b4d",
+    "validation/numerical_agreement.xlsx": "19ce08b6372ea65cb63f281aa6011f9a2c20f982af64ce477d447ad36a522932"
+  },
+  "source_files": [],
+  "supplement_sha256": "f80b33927090d11b804a7dffd09333945a0fecf58243f44aa8bbbdc9dac16fbb"
+}

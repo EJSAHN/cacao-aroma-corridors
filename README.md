@@ -1,5 +1,10 @@
 # Cacao marker harmonization
 
+The original analysis pipeline is version **3.0.0**. Additional analyses for the
+revised manuscript are in [revision diagnostics 1.0.0](revision_diagnostics/README.md).
+See the [revision snapshot](docs/revision_release.md) for component versions,
+validation and the relationship to the submitted code archives.
+
 Version 3.0.0. Reproducible analysis of marker identity, reference-derived SNP
 coordinates, positional representation and conditional genotype-dosage correlations
 in public cacao resources. Numerical deliverables are values-only Excel workbooks.
@@ -118,3 +123,20 @@ The code is MIT licensed; source-data and external-tool licenses remain separate
 Third-party input spreadsheets are not redistributed. Retain source identifiers,
 original worksheet names and acquisition details when reusing results. Software
 citation metadata is provided in `CITATION.cff`.
+
+## Analyses for the revised manuscript
+
+The revised manuscript is **Coordinate conventions and marker density shape coverage
+of cacao aroma loci**. The original alignment and source-to-table pipeline remains
+version **3.0.0**. Additional analyses are supplied separately as
+[revision diagnostics version 1.0.0](revision_diagnostics/README.md). They reproduce
+own-filter recovery, identifier-link and coordinate audits, conditional adjusted
+genotype correlations, per-peak coordinate anchors and gene-background sensitivity
+from the published fixed tables and original source workbooks.
+
+The companion's calculation modules preserve the bytes of the verified revision
+analyses, while its entry point accepts explicit data/output paths. Its validation
+compares the resulting tables against the verified native Windows outputs. Figure
+production remains a separate publication component. Software versions identify
+different components; the repository name and earlier dataset title are stable
+identifiers for the same study rather than alternative scientific analyses.

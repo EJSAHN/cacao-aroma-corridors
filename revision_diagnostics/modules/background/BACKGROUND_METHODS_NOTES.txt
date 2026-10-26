@@ -1,0 +1,58 @@
+CODE4 METHODS AND INTERPRETATION
+
+Scientific question
+How much does the observed candidate-gene coverage differ from the coverage
+of annotated noncandidate genes under alternative matching definitions?
+This is not an assessment of aroma-effect replication or breeding value.
+
+Fixed elements
+Retain both original target sets, the eligible Criollo v2 annotation catalog,
+all original candidate exclusions, the three marker resources and A/B/C
+coordinate states, and every original flank distance. A zero distance means
+that a marker lies inside a closed gene interval; flanks are inclusive.
+Do not change target genes to make a matching model feasible.
+
+Matching sensitivity
+The length-only comparator matches chromosome, gene biotype and length bin.
+The density comparator additionally matches local annotated-gene density bin.
+The additional grid is a revision sensitivity grid, not a reconstruction of
+an originally prespecified optimization. The original three density bins and
++/-250-kb neighborhood are retained as the reference configuration; no claim
+is made that these are biologically optimal. Coarser/finer bins and narrower/
+wider neighborhoods examine dependence on those choices.
+
+The neighborhood counts all eligible annotated gene midpoints on the same
+chromosome, excluding only the focal gene itself. It is not the number of
+markers and does not condition directly on the coverage outcome.
+Quantile boundaries are determined separately by biotype from noncandidate
+genes. Equal feature values are assigned consistently to the same bin.
+When a stratum lacks enough noncandidate genes, the whole target/model pair
+remains blocked. No replacement, stratum widening or target omission occurs.
+
+Empirical percentiles
+For observed covered-gene count O and R background draws with counts B_r:
+  strict   = 100 * number(B_r < O) / R
+  inclusive= 100 * number(B_r <= O) / R
+  midrank  = 100 * [number(B_r < O) + 0.5 * number(B_r = O)] / R
+These use integer covered-gene counts to avoid float-based tie ambiguity.
+The strict-to-inclusive interval exposes discrete ties. Midrank is the
+primary descriptive percentile and the other two values remain available.
+The 2.5th and 97.5th percentiles of draw coverage use linear interpolation.
+They describe variation among draws, not a confidence interval for a trait
+effect. No P-values, FDR correction or significance labels are generated.
+
+Ascertainment
+The candidate list was assembled around published associations, including
+those detected with the G7 and MAF5 exports. Coverage by those same resources
+is therefore partly conditioned on discovery. Diversity provides another
+marker-resource comparison, but shared marker/sequence provenance means it
+is not an independent biological replication. Matching annotated genes does
+not reconstruct the original tested-marker universe, remove candidate-
+selection effects, or jointly control marker counts and spatial dependence.
+
+Reporting
+Report the full sensitivity grid, including unavailable configurations.
+Do not select a matching model because it puts observed coverage inside a
+particular interval. Distinguish target sets, coordinate states, radii and
+coverage flanks in tables and prose. If conclusions vary, report that
+dependence directly rather than describing one model as definitive.

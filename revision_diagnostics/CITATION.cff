@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this companion, the original analysis software, and the original data sources."
+type: software
+title: "Cacao marker harmonization revision diagnostics"
+version: 1.0.0
+authors:
+  - family-names: Ahn
+    given-names: Ezekiel
+license: MIT
+repository-code: 'https://github.com/EJSAHN/cacao-aroma-corridors'
+abstract: 'Additional provenance, coordinate, genotype-correlation and annotated-gene background analyses for cacao marker harmonization using fixed published tables and original source workbooks.'

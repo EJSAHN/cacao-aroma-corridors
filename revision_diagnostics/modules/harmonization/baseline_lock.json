@@ -1,0 +1,94 @@
+{
+  "analysis_relative": "cacao_marker_harmonization/results/analysis_20260913_165303_981545",
+  "source_relative": "cacao_aroma_project/data_raw",
+  "analysis_manifest_sha256": "1fadd27c28b133fd6995a1f6bff3af1f4e04e8164193b603dea38c62728cfd4e",
+  "analysis_files": {
+    "alignment_coverage/01_realignment_evidence.xlsx": "fb1e71feee86109c6a72a85277d0bf6a788a5b7a8a6f8d82ed48640abbb5e349",
+    "alignment_coverage/02_fixed_marker_cohorts.xlsx": "c1a26848e914ab192f4c108b25fb4c06845844502e45d28591bc57d8bbecebdf",
+    "alignment_coverage/03_fixed_query_sets.xlsx": "661cae12be76ffd59c32815c053ead6b478a9da216da83f69a6b6b27a4b6b1e4",
+    "alignment_coverage/04_paired_coverage_effects.xlsx": "9a8e4a98ae959d955362ef1e5770e2937e6e1a66b1162c0c7bff2be3d569d64a",
+    "alignment_coverage/05_count_matched_sensitivity.xlsx": "40dd306a5a0f321a9bcb13b31dcb96378d21edb6825c2277e33acd8feff5c219",
+    "alignment_coverage/06_matched_gene_background.xlsx": "affc913784d5b6f98ebf8e308478893d7808a5dd14f2ed3b7cd7fc5e0898b481",
+    "alignment_provenance.json": "c0332e18933a5482765a3a1109af3fd032a5154931d1c89d750d12295935b950",
+    "analysis.log": "f812a7bb8c6e85bf185bd3f465737a120bece84ae222b8e6df4973862ad319b2",
+    "analysis_summary.json": "799d48b82e7d8a76faea37e6e2b0ea52b9241205680e2ecd503cbc10905dfa3f",
+    "bowtie2_alignment.log": "c13e0424770584fe3953ebba5a6c2aab66e931fb8298cfecf147da81f391345b",
+    "dosage_ld/01_genotype_coordinate_qc.xlsx": "188f2d747428d7397dfb358800dba3fe5ae2beaa6a908a647554242ad684c8aa",
+    "dosage_ld/02_ld_distance_profiles.xlsx": "6d984b0cd9b84fcdf6a46c57baca2cae85324dd5709c44a9cb111a1b67a15d72",
+    "dosage_ld/03_pairwise_dosage_ld.xlsx": "d93ec707ce7d283d1b982af39da72bc7587714cec3c45cc73bf05ac269dc8f49",
+    "dosage_ld/04_shared_collection_comparison.xlsx": "cf24bc175ad6c06c9441f7808a1ed70b90359ce7b14ec88d4f41e6e4252fad0d",
+    "dosage_ld/05_observed_snp_neighbors.xlsx": "741597d8699a11c2324cd6f143aeb4dc194a50ab2148bf29c298c36a64f9d070",
+    "exact_policy_coverage/01_coverage.xlsx": "1c97b625e9242458dc005f002c693366705a21b349a664c74d6b0c3a660c839a",
+    "native_smoke_test.json": "d952a25e6325e0ef6d5ccd6b64beb571aa11c757e25d581b028c1807dfa85c50",
+    "provenance/01_analysis_manifest.xlsx": "e4d66cd47b9b5474dc624340a13717f8d9b53fd81678dc4e93e97d71ec1f918c",
+    "reference_mapping/01_exact_tag_mapping.xlsx": "b521e8f112326ee1fef53a21153bcb9d5402b7ba7416f458f12a56fb1a95348b",
+    "reference_mapping/02_exact_coordinates.xlsx": "31532df12b8b8bb3b47bd64cc6907997271ee93328c92ee3830ee239bc8c1fce",
+    "reference_mapping/03_coordinate_conventions.xlsx": "93da47dd249c1c8521cdfb408f7ed9f8105f2655642f6e704b9f2b42a0dd06a9",
+    "reference_mapping/04_reference_annotation.xlsx": "8d766da577b97de3203b151fa8bdbb13136d1664875282500a5496c515148fd0",
+    "reference_mapping/05_association_context.xlsx": "5618bc71f442107b84b30d98d639ea7cc82338ded2129b65358b7a2d6948ae99",
+    "RUN_SUMMARY.txt": "210d2758763722314f0bfdb0db3e2d91982c6a041b2e98d790341c8f265c1125",
+    "source_allele_tags.fa": "5c80716dc80faf3a8df522393fbef2792b6085bb2115cb78e012b9ac74a6ce1f",
+    "source_data/01_resources.xlsx": "a4e35a0ae88b6f624fe5d213e300511c30a7f0f712f65b927d48e41dc6eb1907",
+    "source_data/02_association_units.xlsx": "b94aa3592781c76183333737aa6a7cf89b85001d99c0a07e3316e9a15a43194c",
+    "source_data/03_candidate_units.xlsx": "ca9b859d0a3cf9bdafe3f73197bc103ef4e74ee4d41df44ca14d2b693f8dc44f",
+    "source_data/04_marker_identity.xlsx": "2d1e720f50ea2ffc23d70011e4455475f2d958101452099c7c7b5425d8adfd6a",
+    "source_evidence/01_sequence_identity.xlsx": "e86a02b70d26e2a311ce3bade490fa0d680be76fc5acc2681133717876eb943c",
+    "source_evidence/02_coordinate_hypotheses.xlsx": "f6ddfa7e6d76e6b2c280a76ecefdbb8291934b47872eae9ed3409cc1932bdd68",
+    "source_evidence/03_association_correspondence.xlsx": "087ab2639433e00394646a8ff60fe61a4f4f0f561e224cd39c9618e34cd163b6",
+    "source_evidence/04_genotype_symbols.xlsx": "d6ac4b5ade4c591f822997ca6ebae95edc606e5c4edc8dab0c13aca8f08006de",
+    "study_config.json": "f84f2830247d58227ca973ebfbe3a6b207b9e7af4c37fa4fc9f31f1e58fc1bfe",
+    "validation/agreement.json": "5050e6c7fba8b7a6d7b6e30abb4445801df02d40a3e62093505d882ed6dc8b4d",
+    "validation/numerical_agreement.xlsx": "19ce08b6372ea65cb63f281aa6011f9a2c20f982af64ce477d447ad36a522932"
+  },
+  "source_files": [
+    {
+      "role": "associations",
+      "relative_path": "nacional_paper/mmc2_all_associations.xlsx",
+      "bytes": 862239,
+      "sha256": "41e29d359b1cf7ba97f770ed4778dabb01aae13015cf95079fdef8a2ebe3fe0a"
+    },
+    {
+      "role": "candidates",
+      "relative_path": "nacional_paper/mmc4_candidate_genes.xlsx",
+      "bytes": 51306,
+      "sha256": "b1faf4f3af8506009d4e4eb9f14acd9cbf36a454ed5a01493a8385db0911cdaf"
+    },
+    {
+      "role": "Amazonia",
+      "relative_path": "amazonia/Cocoa Amazonia Ecuador aroma.xlsx",
+      "bytes": 3815951,
+      "sha256": "79aa602f5867fb982482fa9fa50c53fa616b90671d63a031ae99e014b3b39da4"
+    },
+    {
+      "role": "Diversity",
+      "relative_path": "tropgene/genotypes/cocoa_diversity/Cocoa diversity.xlsx",
+      "bytes": 7413040,
+      "sha256": "0fa9173fa6d4b9c053274be60868cebb7268f1eff66b421432389a9032a01a07"
+    },
+    {
+      "role": "Nacional_G7",
+      "relative_path": "tropgene/genotypes/cocoa_nacional_aroma/GBS_Nac_G7.xls",
+      "bytes": 10245120,
+      "sha256": "fc21d040e149d5adaaac16d77b1d5f14328e3c89d0d24574a38a61cb9a56d63f"
+    },
+    {
+      "role": "Nacional_MAF5",
+      "relative_path": "tropgene/genotypes/cocoa_nacional_aroma/GBS_Nac_MAF5.xls",
+      "bytes": 14380032,
+      "sha256": "c9c9427472db47063aacf80db3f473631f581e98485d9e0003c5796b08a528f6"
+    },
+    {
+      "role": "Incompatibility",
+      "relative_path": "tropgene/genotypes/incompatibility_snp_mapping_brazil/Incompatibility SNP mapping Brazil.xlsx",
+      "bytes": 50256,
+      "sha256": "410b4556cbf6de9e57a1fd0c5bb462fb20c9c60972dfce7128d7664d5e1e62d8"
+    },
+    {
+      "role": "aDNA_reference",
+      "relative_path": "tropgene/genotypes/reference_collection_for_aDNA_studies/Reference collection for aDNA studies.xlsx",
+      "bytes": 1099786,
+      "sha256": "e9b38d56b681b2b4ee100ce8c2e04e31efd40adea0df62d541023cdff25cc141"
+    }
+  ],
+  "supplement_sha256": "f80b33927090d11b804a7dffd09333945a0fecf58243f44aa8bbbdc9dac16fbb"
+}

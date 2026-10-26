@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "study_id": "cacao_aroma_representation",
+    "seed": 1729,
+    "chromosomes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "chromosome_aliases": {},
+    "association_file": "nacional_paper/mmc2_all_associations.xlsx",
+    "association_aliases": [
+      "1-s2.0-S0981942821005647-mmc2.xlsx",
+      "mmc2_all_associations.xlsx"
+    ],
+    "association_master_sheet": "synth_tot",
+    "association_fruity_subset_sheet": "synth_composés_fruité",
+    "candidate_file": "nacional_paper/mmc4_candidate_genes.xlsx",
+    "candidate_aliases": [
+      "1-s2.0-S0981942821005647-mmc4.xlsx",
+      "mmc4_candidate_genes.xlsx"
+    ],
+    "candidate_sheet": "Synth",
+    "pathway_columns": {
+      "Monoterpene": "Monoterpene pathway",
+      "L-phe": "L-phenylalanine degradation pathway",
+      "Fatty acid": "Fatty acid pathway",
+      "Sugar": "Sugar pathway",
+      "Maillard": "Maillard precursor"
+    },
+    "resources": [
+      {
+        "id": "Amazonia",
+        "label": "Amazonia",
+        "role": "comparison_collection",
+        "path": "amazonia/Cocoa Amazonia Ecuador aroma.xlsx",
+        "aliases": [
+          "Cocoa Amazonia Ecuador aroma.xlsx"
+        ],
+        "format": "matrix",
+        "coordinate_status": "unverified",
+        "coordinate_evidence": "",
+        "genotype_encoding": "unverified",
+        "encoding_evidence": ""
+      },
+      {
+        "id": "Diversity",
+        "label": "Diversity",
+        "role": "marker_metadata_resource",
+        "path": "tropgene/genotypes/cocoa_diversity/Cocoa diversity.xlsx",
+        "aliases": [
+          "Cocoa diversity.xlsx"
+        ],
+        "format": "marker_metadata",
+        "coordinate_status": "unverified",
+        "coordinate_evidence": "",
+        "genotype_encoding": "none",
+        "encoding_evidence": ""
+      },
+      {
+        "id": "Nacional_G7",
+        "label": "Nacional G7",
+        "role": "Nacional_filter_variant",
+        "path": "tropgene/genotypes/cocoa_nacional_aroma/GBS_Nac_G7.xls",
+        "aliases": [
+          "GBS_Nac_G7.xls",
+          "GBS_Nac_G7.xlsx"
+        ],
+        "format": "matrix",
+        "coordinate_status": "unverified",
+        "coordinate_evidence": "",
+        "genotype_encoding": "iupac_diploid",
+        "encoding_evidence": "Literal A/C/M interpretation (AA/CC/AC) for an A/C-coded matrix; not biological allele alignment; dosage LD is exploratory."
+      },
+      {
+        "id": "Nacional_MAF5",
+        "label": "Nacional MAF5",
+        "role": "Nacional_filter_variant",
+        "path": "tropgene/genotypes/cocoa_nacional_aroma/GBS_Nac_MAF5.xls",
+        "aliases": [
+          "GBS_Nac_MAF5.xls",
+          "GBS_Nac_MAF5.xlsx"
+        ],
+        "format": "matrix",
+        "coordinate_status": "unverified",
+        "coordinate_evidence": "",
+        "genotype_encoding": "iupac_diploid",
+        "encoding_evidence": "Literal A/C/M interpretation (AA/CC/AC) for an A/C-coded matrix; not biological allele alignment; dosage LD is exploratory."
+      },
+      {
+        "id": "Incompatibility",
+        "label": "Incompatibility",
+        "role": "auxiliary_ID_comparison",
+        "path": "tropgene/genotypes/incompatibility_snp_mapping_brazil/Incompatibility SNP mapping Brazil.xlsx",
+        "aliases": [
+          "Incompatibility SNP mapping Brazil.xlsx"
+        ],
+        "format": "tropgene",
+        "coordinate_status": "absent",
+        "coordinate_evidence": "",
+        "genotype_encoding": "unverified",
+        "encoding_evidence": "",
+        "optional": true
+      },
+      {
+        "id": "aDNA_reference",
+        "label": "Reference aDNA",
+        "role": "auxiliary_ID_comparison",
+        "path": "tropgene/genotypes/reference_collection_for_aDNA_studies/Reference collection for aDNA studies.xlsx",
+        "aliases": [
+          "Reference collection for aDNA studies.xlsx"
+        ],
+        "format": "tropgene",
+        "coordinate_status": "absent",
+        "coordinate_evidence": "",
+        "genotype_encoding": "unverified",
+        "encoding_evidence": "",
+        "optional": true
+      }
+    ],
+    "max_workbook_rows": 1000000
+  },
+  "source_evidence": {
+    "chromosomes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "chromosome_aliases": {},
+    "diversity_marker_sheet": "marker",
+    "diversity_reference_sheet": "reference sequence",
+    "association_master_sheet": "synth_tot",
+    "candidate_sheet": "Synth",
+    "nacional_resources": [
+      "Nacional_G7",
+      "Nacional_MAF5"
+    ],
+    "missing_symbols": [
+      "",
+      "N",
+      "NN",
+      "NA",
+      "NAN",
+      "NULL",
+      "NONE",
+      "-",
+      "--",
+      "?",
+      "./.",
+      ".|."
+    ],
+    "symbol_polarity_swap": {
+      "A": "C",
+      "C": "A",
+      "M": "M"
+    },
+    "numeric_comparison_rtol": 1e-09,
+    "reported_variance_scale_candidates": [
+      1.0,
+      100.0,
+      0.01
+    ],
+    "trait_alias_candidates": [
+      {
+        "source": "Fruity-DarkTreeFruit_GLM_SSR",
+        "target": "Fruity-DarkTreeFruit",
+        "reason": "Candidate label relationship noted in the source worksheets; compare chromosome, peak, method, filter, p value and interval payloads separately.",
+        "apply_to_primary": false
+      }
+    ],
+    "apply_coordinate_corrections": false,
+    "infer_amazonia_encoding": false
+  },
+  "reference": {
+    "assembly_name": "Criollo_cocoa_genome_V2",
+    "assembly_accession": "GCA_000208745.2",
+    "release": "Ensembl Plants 62",
+    "cache_name": "ensembl_plants_62_criollo_v2",
+    "expected_total_bases": 324719311,
+    "maximum_contig_bases": 200000000,
+    "minimum_cache_free_gib": 2.0,
+    "chromosomes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "chromosome_aliases": {
+      "I": "1",
+      "1": "1",
+      "chr1": "1",
+      "chr01": "1",
+      "Chr1": "1",
+      "II": "2",
+      "2": "2",
+      "chr2": "2",
+      "chr02": "2",
+      "Chr2": "2",
+      "III": "3",
+      "3": "3",
+      "chr3": "3",
+      "chr03": "3",
+      "Chr3": "3",
+      "IV": "4",
+      "4": "4",
+      "chr4": "4",
+      "chr04": "4",
+      "Chr4": "4",
+      "V": "5",
+      "5": "5",
+      "chr5": "5",
+      "chr05": "5",
+      "Chr5": "5",
+      "VI": "6",
+      "6": "6",
+      "chr6": "6",
+      "chr06": "6",
+      "Chr6": "6",
+      "VII": "7",
+      "7": "7",
+      "chr7": "7",
+      "chr07": "7",
+      "Chr7": "7",
+      "VIII": "8",
+      "8": "8",
+      "chr8": "8",
+      "chr08": "8",
+      "Chr8": "8",
+      "IX": "9",
+      "9": "9",
+      "chr9": "9",
+      "chr09": "9",
+      "Chr9": "9",
+      "X": "10",
+      "10": "10",
+      "chr10": "10",
+      "Chr10": "10"
+    },
+    "gff_gene_features": [
+      "gene",
+      "ncRNA_gene",
+      "pseudogene"
+    ],
+    "fasta": {
+      "filename": "Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.dna.toplevel.fa.gz",
+      "urls": [
+        "https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-62/fasta/theobroma_cacao_criollo/dna/Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.dna.toplevel.fa.gz",
+        "https://ftp.ebi.ac.uk/ensemblgenomes/pub/plants/release-62/fasta/theobroma_cacao_criollo/dna/Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.dna.toplevel.fa.gz"
+      ],
+      "maximum_bytes": 268435456,
+      "sha256": null
+    },
+    "gff": {
+      "filename": "Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.62.gff3.gz",
+      "urls": [
+        "https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-62/gff3/theobroma_cacao_criollo/Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.62.gff3.gz",
+        "https://ftp.ebi.ac.uk/ensemblgenomes/pub/plants/release-62/gff3/theobroma_cacao_criollo/Theobroma_cacao_criollo.Criollo_cocoa_genome_V2.62.gff3.gz"
+      ],
+      "maximum_bytes": 67108864,
+      "sha256": null
+    },
+    "identity_source": "https://jun2026-plants.ensembl.org/Theobroma_cacao_criollo/Info/Annotation/",
+    "publication_doi": "10.1186/s12864-017-4120-9"
+  },
+  "exact_mapping": {
+    "matcher": {
+      "seed_k": 12,
+      "chunk_bases": 1000000,
+      "minimum_tag_length": 25,
+      "max_hits": 1000000
+    },
+    "direct_resource": "Diversity",
+    "linked_resources": [
+      "Nacional_G7",
+      "Nacional_MAF5"
+    ]
+  },
+  "coverage": {
+    "seed": 1729,
+    "required_assembly_accession": "GCA_000208745.2",
+    "comparison_resources": [
+      "Diversity",
+      "Nacional_G7",
+      "Nacional_MAF5"
+    ],
+    "original_only_resources": [
+      "Amazonia"
+    ],
+    "windows_bp": [
+      0,
+      1,
+      5,
+      10,
+      20,
+      50,
+      100,
+      500,
+      1000,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      250000,
+      500000
+    ],
+    "rarefaction_replicates": 200,
+    "rarefaction_query_sets": [
+      "unique_candidate_genes",
+      "master_unique_peaks",
+      "master_fruity_subset_peaks",
+      "protein_coding_candidate_genes"
+    ],
+    "background": {
+      "enabled": true,
+      "replicates": 1000,
+      "length_bins": 5,
+      "local_gene_density_bins": 3,
+      "local_gene_density_radius_bp": 250000,
+      "models": [
+        "chromosome_biotype_length",
+        "chromosome_biotype_length_gene_density"
+      ],
+      "query_set": "unique_candidate_genes",
+      "formal_p_values": false,
+      "query_sets": [
+        "unique_candidate_genes",
+        "protein_coding_candidate_genes"
+      ]
+    },
+    "minimum_output_free_gib": 3.0,
+    "study_id": "cacao_positional_representation"
+  },
+  "alignment": {
+    "version": "2.5.5",
+    "seed": 1729,
+    "threads": 4,
+    "max_reported_hits": 10,
+    "seed_length": 18,
+    "seed_mismatches": 1,
+    "effort_D": 25,
+    "effort_R": 4,
+    "seed_interval": "S,1,0.5",
+    "score_min": "L,-30,0",
+    "mismatch_penalty": 6,
+    "gap_open": 5,
+    "gap_extend": 3,
+    "max_nonfocal_edit_bases": 3,
+    "max_gap_bases": 2,
+    "focal_gap_guard_bases": 3,
+    "minimum_score_gap": 6,
+    "minimum_tag_length": 25,
+    "timeout_seconds": 14400,
+    "min_cache_free_gib": 5.0
+  },
+  "tools": {
+    "official_release": "https://github.com/BenLangmead/bowtie2/releases/tag/v2.5.5",
+    "platforms": {
+      "Windows-x86_64": {
+        "asset": "bowtie2-2.5.5-mingw-x86_64.zip",
+        "sha256": "77bfac3a84c54f4032ee851c19917802decc1b28083ce17a5f92a0c4d729bdba",
+        "bytes": 56525994
+      },
+      "Linux-x86_64": {
+        "asset": "bowtie2-2.5.5-linux-x86_64.zip",
+        "sha256": "38472e806f56ed23d32cbe7a7fe1b7260680f892647aa78c2f6882f8f272a026",
+        "bytes": 136138150
+      }
+    },
+    "base_url": "https://github.com/BenLangmead/bowtie2/releases/download/v2.5.5/"
+  },
+  "dosage_ld": {
+    "study_id": "cacao_nacional_dosage_ld",
+    "required_assembly_accession": "GCA_000208745.2",
+    "seed": 1729,
+    "resources": [
+      "Nacional_G7",
+      "Nacional_MAF5"
+    ],
+    "chromosomes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "sensitivity_sample_ids": [
+      "SNA604",
+      "L17H53"
+    ],
+    "sensitivity_reason": "Previously observed between-export call differences are concentrated in these two shared sample IDs. Both the inclusive and exclusion sensitivity analyses are retained; no source call is edited.",
+    "encoding": {
+      "mode": "ACM_symbol_dosage",
+      "declared_allele_set": [
+        "A",
+        "C"
+      ],
+      "symbol_to_dosage": {
+        "A": 0,
+        "M": 1,
+        "C": 2
+      },
+      "missing_symbols": [
+        "",
+        "N",
+        "NN",
+        "NA",
+        "NAN",
+        "NULL",
+        "NONE",
+        "-",
+        "--",
+        "?",
+        ".",
+        "./.",
+        ".|."
+      ],
+      "interpretation": "Conditional unphased dosage correlations under the A/C/M = 0/2/1 convention present in these exports. Dosage polarity is not aligned to the reference genome or a favorable aroma allele."
+    },
+    "qc": {
+      "sample_min_call_rate": 0.9,
+      "marker_min_call_rate": 0.9,
+      "min_maf": 0.05,
+      "min_pair_samples": 50,
+      "min_markers": 20,
+      "duplicate_corrected_position_policy": "exclude_all",
+      "fixed_marker_qc": "intersection_of_all_and_omitted_sample_groups"
+    },
+    "ld": {
+      "max_distance_bp": 1000000,
+      "distance_edges_bp": [
+        0,
+        1000,
+        5000,
+        10000,
+        20000,
+        50000,
+        100000,
+        250000,
+        500000,
+        1000000
+      ],
+      "report_windows_bp": [
+        10000,
+        50000,
+        250000,
+        1000000
+      ],
+      "r2_thresholds": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "context_pairs_per_class": 5000,
+      "distant_same_chromosome_min_bp": 5000000,
+      "max_union_pairs": 1500000,
+      "batch_pairs": 2048,
+      "r2_agreement_tolerance": 1e-12,
+      "export_rows_per_sheet": 500000
+    },
+    "minimum_output_free_gib": 2.0
+  },
+  "minimum_output_free_gib": 3.0
+}
