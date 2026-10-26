@@ -2,8 +2,8 @@
 
 Obtain third-party data from their original providers and retain their licenses and
 study metadata. The listed names are the original resource labels, not inferred
-publication-to-workbook equivalences. No phenotype measurements or sequencing reads
-are fabricated or downloaded by this workflow.
+publication-to-workbook equivalences. The workflow uses the supplied workbooks;
+phenotype measurements and sequencing reads are outside its input scope.
 
 ## Required input workbooks
 
@@ -64,8 +64,8 @@ are retained in evidence tables but not included in primary-chromosome coverage.
 
 Exact HTTPS download locations are declared in `config/study.json`. Local files
 are validated and reused without copying when provided explicitly. SHA-256 is
-recorded as observed provenance, not misrepresented as a publisher-authenticated
-checksum. An explicit expected digest can be supplied in the configuration.
+recorded from the supplied file as provenance. An explicit expected digest can
+be supplied in the configuration.
 
 ## Native aligner
 

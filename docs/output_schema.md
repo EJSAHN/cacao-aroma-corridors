@@ -40,5 +40,6 @@ The output preserves original `synth_tot` and other worksheet names as provenanc
 
 A `BLOCKED_INSUFFICIENT_STRATA` background model is not a failed execution. It
 means no complete comparable draw was possible under the stated conditions.
-The full candidate result and coding-only sensitivity remain separate. Neither
-receives a fabricated significance label or a replacement target denominator.
+The full candidate result and coding-only sensitivity retain their separate
+target denominators. Background comparisons are descriptive and have no
+significance labels.

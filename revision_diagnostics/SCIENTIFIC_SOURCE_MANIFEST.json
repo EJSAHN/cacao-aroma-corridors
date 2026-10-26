@@ -75,7 +75,9 @@
     "stage": "genotypes",
     "file": "modules/genotypes/CODING_EVIDENCE.txt",
     "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
-    "sha256": "66d542650c8b79e5cb6aecc38132019a980f24b8fb71042e71e4f1f0e2dabcfc"
+    "sha256": "4d03ccaec332b5804ae06793d34bff3d04e05d6a51774c3af083f6b556be97fc",
+    "source_file_sha256": "66d542650c8b79e5cb6aecc38132019a980f24b8fb71042e71e4f1f0e2dabcfc",
+    "change_type": "documentation_only"
   },
   {
     "stage": "genotypes",
@@ -171,7 +173,9 @@
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/ADJUSTED_MATH_NOTES.txt",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "d5706723da24261bc3afcf5c5e77858bbc12fa54f59d28074a93ab74b2056315"
+    "sha256": "7ff9014529c123f800d76b950867ae19aa9192717219631f5643fcdefac60925",
+    "source_file_sha256": "d5706723da24261bc3afcf5c5e77858bbc12fa54f59d28074a93ab74b2056315",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
@@ -213,7 +217,9 @@
     "stage": "background",
     "file": "modules/background/BACKGROUND_METHODS_NOTES.txt",
     "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
-    "sha256": "0903e7120b967c8e9084a968b7214c5c5cf67542cb5b9b85a4edbd703eb21046"
+    "sha256": "7f56432cd6f7e51b2beabcf99dc7e3147243be81b9d96939038d2829ed6eff39",
+    "source_file_sha256": "0903e7120b967c8e9084a968b7214c5c5cf67542cb5b9b85a4edbd703eb21046",
+    "change_type": "documentation_only"
   },
   {
     "stage": "background",

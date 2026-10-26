@@ -3,7 +3,7 @@
 This document describes implemented operations. It does not establish phenotype
 effects, favorable alleles, haplotype conservation or an optimal breeding window.
 All source-specific names, chromosomes, windows, sample sensitivity IDs and QC
-thresholds are explicit in `config/study.json`; no private drive paths are embedded.
+thresholds are explicit in `config/study.json`.
 
 ## Source units and identity
 
@@ -14,7 +14,7 @@ physical point, not an independent association discovery. The fruity subset is a
 separately named point set. Source-defined intervals are used only when boundaries
 are supplied, ordered, in range and compatible with the peak. Missing boundaries
 are not replaced with an assumed LD block. Potential rotated fields and trait-name
-aliases are reported but do not silently edit primary records. Qualitative candidate
+aliases are reported while primary records are retained. Qualitative candidate
 flags (`Near`, `?`) remain distinct from explicit membership. Repeated gene IDs with
 consistent coordinates are consolidated; conflicting intervals are quarantined.
 
@@ -82,8 +82,8 @@ All original candidate IDs are excluded from the background catalog. Noncandidat
 gene sets are matched on chromosome, biotype and gene-length bins (five bins),
 optionally adding local annotated-gene-density bins (three bins, 250-kb radius).
 Background genes are sampled without replacement, 1,000 draws per evaluable model.
-The same draw is applied across resource/coordinate arms. No depleted stratum is
-silently widened; incomplete models are flagged without dropping target genes.
+The same draw is applied across resource/coordinate arms. Models with depleted strata are
+flagged without widening strata or dropping target genes.
 The full candidate and protein-coding-only sets are distinct analyses. Background
 quantiles describe repeated draws, not biological confidence intervals. No p-value,
 FDR or claim of enrichment against the original tested-GWAS universe is produced.

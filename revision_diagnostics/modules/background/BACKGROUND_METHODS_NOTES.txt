@@ -1,4 +1,4 @@
-CODE4 METHODS AND INTERPRETATION
+Matched-background methods and interpretation
 
 Scientific question
 How much does the observed candidate-gene coverage differ from the coverage
@@ -6,11 +6,11 @@ of annotated noncandidate genes under alternative matching definitions?
 This is not an assessment of aroma-effect replication or breeding value.
 
 Fixed elements
-Retain both original target sets, the eligible Criollo v2 annotation catalog,
-all original candidate exclusions, the three marker resources and A/B/C
+The analyses retain both original target sets, the eligible Criollo v2 annotation
+catalog, all original candidate exclusions, the three marker resources and A/B/C
 coordinate states, and every original flank distance. A zero distance means
 that a marker lies inside a closed gene interval; flanks are inclusive.
-Do not change target genes to make a matching model feasible.
+Target sets remain fixed when a matching model is infeasible.
 
 Matching sensitivity
 The length-only comparator matches chromosome, gene biotype and length bin.
@@ -51,8 +51,7 @@ not reconstruct the original tested-marker universe, remove candidate-
 selection effects, or jointly control marker counts and spatial dependence.
 
 Reporting
-Report the full sensitivity grid, including unavailable configurations.
-Do not select a matching model because it puts observed coverage inside a
-particular interval. Distinguish target sets, coordinate states, radii and
-coverage flanks in tables and prose. If conclusions vary, report that
-dependence directly rather than describing one model as definitive.
+The full sensitivity grid is reported, including unavailable configurations.
+Models are not selected according to the resulting coverage interval. Results
+identify the target set, coordinate state, neighborhood radius and coverage
+flank, allowing dependence on each matching choice to be assessed.

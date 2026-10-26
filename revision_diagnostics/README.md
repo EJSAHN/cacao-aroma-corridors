@@ -13,10 +13,9 @@ identify successive descriptions of the same study, not separate datasets.
 
 The original **cacao-marker-harmonization 3.0.0** pipeline remains the source-to-
 reference analysis. This companion uses its published fixed tables and the original
-workbooks to reproduce the additional analyses. The scientific calculation modules
-are unchanged from the four verified revision stages; their SHA-256 identities are
-listed in `SCIENTIFIC_SOURCE_MANIFEST.json`. The portable entry point accepts explicit
-paths and does not require a particular drive, username, installation or old run folder.
+workbooks to reproduce the additional analyses. The calculation modules and their
+source provenance are listed in `SCIENTIFIC_SOURCE_MANIFEST.json`. The entry point accepts explicit
+input and output paths.
 
 ## Requirements and inputs
 
@@ -58,9 +57,8 @@ a scientific parameter.
 The original version 3.0.0 pipeline can reproduce source parsing and reference
 alignment from the provider workbooks and pinned Criollo v2 reference. Its separate
 README gives that workflow. A newly generated workbook archive can differ in file
-bytes even when scientific tables agree. This companion intentionally checks the
-published S1 reference for exact study reproduction; it does not silently substitute
-a newly generated or altered reference table.
+bytes even when scientific tables agree. This companion checks the
+published S1 workbook against its expected SHA-256 digest.
 
 ## Stages and outputs
 
@@ -97,11 +95,10 @@ Run the companion interface tests:
 python -B -m unittest discover -s tests -p "test_*.py"
 ```
 
-The scientific tests are available in their respective module directories. Native
-Windows results from the four original stages were verified before packaging.
-The portable entry point is then checked against those result tables. Validation
-describes the exact run scope in `VALIDATION.json`; it is not a claim that genome
-alignment was rerun by this companion.
+The scientific tests are available in their respective module directories.
+`VALIDATION.json` records the comparison of the four stages with the original
+Windows analysis results. Validation covers the downstream analyses described
+here.
 
 ## Versions and citation
 
@@ -113,5 +110,4 @@ The earlier dataset title is retained in the provenance of the original data
 record and refers to the same study and fixed table export.
 
 Code is MIT licensed. Cite the original data sources as well as the software.
-Archival DOI metadata must be taken from an actual published archival record;
-this code does not mint or predict a DOI.
+Software citation metadata is provided in `CITATION.cff`.

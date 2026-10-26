@@ -2,12 +2,12 @@
 
 The original analysis pipeline is version **3.0.0**. Additional analyses for the
 revised manuscript are in [revision diagnostics 1.0.0](revision_diagnostics/README.md).
-See the [revision snapshot](docs/revision_release.md) for component versions,
-validation and the relationship to the submitted code archives.
+See [software versions and reproducibility](docs/revision_release.md) for component
+versions, validation and source archives.
 
-Version 3.0.0. Reproducible analysis of marker identity, reference-derived SNP
-coordinates, positional representation and conditional genotype-dosage correlations
-in public cacao resources. Numerical deliverables are values-only Excel workbooks.
+The original pipeline analyzes marker identity, reference-derived SNP coordinates,
+positional representation and conditional genotype-dosage correlations in public
+cacao resources. Numerical deliverables are values-only Excel workbooks.
 No figures, phenotype predictions, new GWAS, imputed genotypes or reconstructed
 haplotypes are generated.
 
@@ -44,7 +44,7 @@ inferred. High positional coverage is not evidence of aroma-effect transferabili
 Python 3.10 or newer; NumPy >=1.26, pandas >=2.1 and openpyxl >=3.1. An installed
 xlrd >=2.0.1 is used for legacy XLS when available. A restricted, read-only BIFF8
 fallback is included for supported value-only layouts and rejects unsupported
-records instead of silently interpreting them. No Excel formulas are evaluated.
+records. No Excel formulas are evaluated.
 
 Bowtie 2 **2.5.5** is the only external executable. Supply an existing directory
 with `bowtie2-align-s` and `bowtie2-build-s` (with `.exe` on Windows), or allow
@@ -72,9 +72,9 @@ python -B scripts/run_analysis.py run --source-root "<source-project>" --output-
 `--source-root` may be a project containing `data_raw` or that directory itself.
 Output, scratch, native-tool and cache locations must be separate, nonnested paths
 outside source inputs and code. The scientific configuration is `config/study.json`;
-`--config` can select a different file. Defaults are the published analysis policy,
-not optimized parameters or inferred biological assumptions. Changing a policy
-requires interpreting and documenting a new analysis, not overriding integrity checks.
+`--config` can select a different file. The default configuration reproduces the
+reported analysis policy. Record any configuration changes when interpreting a
+new analysis.
 
 `--offline` prohibits downloads. Without it, only the configured reference and
 pinned native-tool assets may be downloaded. No Python packages are installed.
@@ -88,20 +88,16 @@ a sparse list of high-r2 pairs.
 Every run creates a new `analysis_<timestamp>` directory with scientific workbooks,
 configuration, summary, logs and a SHA-256 manifest, followed by a result ZIP.
 Inputs, FASTA/GFF3, executables, index files and complete SAM are **not** copied into
-the result archive. Verified reference/index/alignment caches are reusable; an
-incomplete or changed cache is not silently accepted. Exact-search results are
+the result archive. Reference, index and alignment caches are validated before
+reuse. Exact-search results are
 recomputed from the original reference rather than loaded from an old workbook.
 Full enumerated pair tables are retained and split at an indexed worksheet row
-limit when necessary. There are no preview-only replacements for full tables.
+limit when necessary.
 
-`COMPLETED_WITH_DECLARED_LIMITATIONS` means execution completed; it does not certify
-biological portability. A background model can be `BLOCKED_INSUFFICIENT_STRATA`;
-its criteria are never silently weakened. See [output schema](docs/output_schema.md),
+`COMPLETED_WITH_DECLARED_LIMITATIONS` records successful execution with the stated
+limitations. Background models with insufficient matching strata are reported as
+`BLOCKED_INSUFFICIENT_STRATA`. See [output schema](docs/output_schema.md),
 [analysis definitions](docs/methods.md) and [validation](docs/validation.md).
-
-The separately distributed local convenience launcher deploys **this same source
-archive** and may discover existing local caches. It is not a second scientific
-implementation and is not needed by other users of this repository.
 
 ## Numerical reference comparison
 
@@ -114,7 +110,6 @@ python -B scripts/run_analysis.py verify-results --analysis-run "<completed-anal
 ```
 
 A failed comparison returns a nonzero exit code and lists differing fields.
-Do not accept a release by deleting those discrepancies or changing reference data.
 No old result directories or local comparison fixtures are distributed here.
 
 ## License and citation
@@ -134,9 +129,7 @@ own-filter recovery, identifier-link and coordinate audits, conditional adjusted
 genotype correlations, per-peak coordinate anchors and gene-background sensitivity
 from the published fixed tables and original source workbooks.
 
-The companion's calculation modules preserve the bytes of the verified revision
-analyses, while its entry point accepts explicit data/output paths. Its validation
-compares the resulting tables against the verified native Windows outputs. Figure
-production remains a separate publication component. Software versions identify
-different components; the repository name and earlier dataset title are stable
-identifiers for the same study rather than alternative scientific analyses.
+The companion accepts explicit input and output paths and includes validation
+against the original Windows analysis results. Figure production is distributed
+separately in Online Resource 6. Component versions and source provenance are
+described in the [version documentation](docs/revision_release.md).

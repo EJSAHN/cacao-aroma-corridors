@@ -1,4 +1,4 @@
-CODE3 mathematical definitions and implementation evidence
+Adjusted-correlation mathematical definitions and implementation
 
 Given sample covariance V and nuisance columns C=[intercept,covariates], define
 W=V^+ and P=W-W C (C' W C)^+ C' W. Adjusted squared correlation is
@@ -40,9 +40,10 @@ adjusted_math.py independently implements the mathematical definitions and is
 checked against Pearson, covariance Schur complements and direct GLS precision.
 
 EXPLICIT DIFFERENCES FROM LDCORSV DEFAULTS
-CODE3 uses a stated relative eigenvalue tolerance rather than an absolute1e-5
-cutoff. Minimum sample size remains50; zero residual variance is missing, not
-zero correlation. This is not a claim of bit-identical LDcorSV execution.
+The implementation uses a stated relative eigenvalue tolerance rather than an
+absolute 1e-5 cutoff. The minimum sample size is 50; zero residual variance is
+recorded as missing rather than zero correlation. These settings differ from
+the LDcorSV defaults.
 
 Centered K has the intercept in its null space. The production covariance adds
 ridge*I and ones(n,n)/n. The second term affects only the intercept direction;
@@ -51,7 +52,7 @@ K+ridge*I. Equivalence is independently tested with and without PC covariates.
 It prevents software eigenvalue thresholds from discarding an intercept direction
 whose eigenvalue would otherwise equal a very small ridge.
 
-Missing source values are rejected. CODE2 established complete A/M/C calls in
-the pinned matrices. No mean imputation or zero filling is performed. All dosage
+Missing source values are rejected. The genotype audit found complete A/M/C
+calls in the pinned matrices. No mean imputation or zero filling is performed. All dosage
 interpretations remain conditional; adjustment does not establish source coding,
 focal variant identity, causality, or breeding utility.

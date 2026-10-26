@@ -1,12 +1,12 @@
-CACAO TGG R1 CODE2: genotype-coding evidence and limits
+Genotype-coding evidence and limits
 Evidence reviewed 26 October 2026
 
 DECISION
 FORMAT_COMPATIBLE_CONDITIONAL_DOSAGE
 The working mapping is A=0, M=1, C=2. Results are conditional on M representing
-the heterozygous state between two homozygous export states. We do not claim
-that the exact exporter codebook, reference/alternate polarity, or favorable
-aroma allele has been established.
+the heterozygous state between two homozygous export states. The exact exporter
+codebook, reference/alternate polarity and favorable aroma allele remain
+unconfirmed.
 
 DIRECT EVIDENCE FROM THE PINNED WORKBOOKS
 Both Nacional files are BIFF8 XLS workbooks with first five columns:
@@ -14,8 +14,7 @@ marker_id, alleles, chrom, pos, strand; sample columns follow immediately.
 G7 contains 4,540 markers and 152 samples; every allele cell is A>C.
 MAF5 contains 6,341 markers and 153 samples; 4,273 allele cells are A/C and
 2,068 are C/A. In both matrices the observed genotype symbols are A, M and C.
-These source observations are reproduced as tables by CODE2, not inferred from
-filenames or altered to match the literature.
+These source observations are reported in the genotype-audit tables.
 
 OFFICIAL FORMAT DOCUMENTATION
 TASSEL 5's nucleotide-code appendix maps A to A:A, C to C:C, and M to A:C.
@@ -38,8 +37,8 @@ The study reports DArTseq SNP genotyping, analysis in TASSEL v5, G7 and MAF5
 filtering, and the same named TropGene Nacional aroma collection. This is
 supporting provenance, not proof that the frozen exports are identical to the
 paper's analysis sets: its reported marker counts differ. Figure 1 identifies
-SNA604 as an ancestral Nacional control. Its discordance is therefore not a
-basis for silently deleting it; the inclusive analysis remains primary.
+SNA604 as an ancestral Nacional control. The primary analysis retains this
+sample; its omission is evaluated separately as a sensitivity analysis.
 
 WHAT THE QC CAN AND CANNOT ESTABLISH
 Literal frequencies and between-export concordance can verify internal
@@ -58,9 +57,8 @@ Missingness or M fractions cannot establish sequencing depth as the cause of
 between-export differences. The interpretation is specific to the Nacional
 exports and must not be transferred automatically to Amazonia or other panels.
 
-NEXT STEPS
-Any structure/kinship adjustment must preserve the conditional coding statement
-unless exporter-specific evidence is obtained. Cross-export proxy analyses also
-require explicit focal/partner identity and shared-sample handling. CODE2 only
-provides within-panel coordinate-anchor diagnostics; a missing focal genotype
-is not evidence of weak LD.
+SCOPE OF DOWNSTREAM ANALYSES
+Structure and kinship adjustments retain the conditional coding interpretation.
+Cross-export analyses use explicit focal/partner identities and shared samples.
+Within-panel results describe coordinate anchors; a missing focal genotype is
+not evidence of weak LD.

@@ -1,4 +1,4 @@
-# Revision code snapshot
+# Software versions and reproducibility
 
 This repository supports **Coordinate conventions and marker density shape coverage
 of cacao aroma loci**. It contains two separately versioned analysis components:
@@ -8,12 +8,9 @@ of cacao aroma loci**. It contains two separately versioned analysis components:
 | Original marker harmonization | 3.0.0 | `scripts/run_analysis.py` | Original provider workbooks and pinned Criollo v2 reference |
 | Revision diagnostics | 1.0.0 | `revision_diagnostics/run_revision.py` | Complete published Supplementary Data S1 and original provider workbooks |
 
-The revision adds the diagnostics directory and documentation. The original
-scientific source, configuration and tests retain their submitted bytes. The
-original source is also preserved at commit
-`67c8235362982b0ba1b6612eea24f914666e5290`; that historical tree contains all
-submitted source files except the archive's `.gitignore`. The current tree restores
-that file and extends the root README. No original calculation is replaced.
+The original scientific source, configuration and tests are preserved at commit
+`67c8235362982b0ba1b6612eea24f914666e5290`. The revision diagnostics provide additional
+analyses using the original fixed tables.
 
 ## Reproducing the study
 
@@ -30,15 +27,13 @@ Online Resource 2 (ESM 2). Their SHA-256 digests are recorded in
 obtained from their providers and are not included in this repository.
 
 Figure and publication production is distributed separately in Online Resource 6
-(ESM 6). This repository does not contain the manuscript, response letter, rendered
-figures or large analysis outputs.
+(ESM 6).
 
 ## Verification
 
-Before this update, all 72 files in the original GitHub tree matched the submitted
-archive by canonical Git blob identity. The original pipeline's 349 tests and the
-diagnostics' 45 tests were rerun successfully. All 38 scientific source records in
-the diagnostics manifest match the verified author-run packages.
+The original pipeline passed 349 tests and the diagnostics passed 45 tests.
+The diagnostics source manifest records the relationship between the public
+files and the original analysis packages.
 
 The four accepted native Windows analysis stages passed 1,586 checks. The separate
 portable replay compared 110 tables containing 1,274,097 rows with those accepted
@@ -46,17 +41,17 @@ results: 98 tables were byte-identical; the remaining adjusted-correlation table
 agreed within absolute tolerance 1e-8 and relative tolerance 1e-7, with no cells
 outside tolerance. Details are in
 [`revision_diagnostics/VALIDATION.json`](../revision_diagnostics/VALIDATION.json).
-These checks do not claim a new full genome-alignment run.
+The portable validation covers downstream analyses; it does not repeat genome
+alignment.
 
 For source integrity, the companion's `PACKAGE_SHA256.json` records every other
 companion file, and `SCIENTIFIC_SOURCE_MANIFEST.json` links scientific files to the
-verified revision stages. Record the full Git commit when using this repository;
-`main` may advance after this snapshot.
+original analysis stages. Record the full Git commit when using this repository;
+`main` may advance as documentation or software is updated.
 
 ## Citation and archive identifiers
 
 The root `CITATION.cff` describes the original 3.0.0 software; the diagnostics have
 their own `CITATION.cff` and version. The dataset identifier
 `10.5281/zenodo.22755806` refers to Supplementary Data S1, not to a software archive.
-An archival software DOI must be cited only after its record is published. This
-code snapshot does not assign a DOI or claim that a GitHub release has been created.
+Use the software version and full Git commit to identify the code used.
