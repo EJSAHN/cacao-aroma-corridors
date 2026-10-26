@@ -54,4 +54,9 @@ original analysis stages. Record the full Git commit when using this repository;
 The root `CITATION.cff` describes the original 3.0.0 software; the diagnostics have
 their own `CITATION.cff` and version. The dataset identifier
 `10.5281/zenodo.22755806` refers to Supplementary Data S1, not to a software archive.
-Use the software version and full Git commit to identify the code used.
+Repository release `r1-2026.10.26` bundles original pipeline 3.0.0 and revision
+diagnostics 1.0.0. The release identifier refers to the repository bundle; it does
+not replace either component version. `.zenodo.json` describes this combined
+software archive and takes precedence over the root `CITATION.cff` when Zenodo
+archives the GitHub release. Use the version-specific software DOI from the release
+record, together with the component version, to identify the code used.

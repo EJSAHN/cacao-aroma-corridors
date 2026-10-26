@@ -1,5 +1,8 @@
 # Cacao marker harmonization
 
+Repository release **r1-2026.10.26** bundles the two analysis components below.
+Zenodo archive metadata are supplied in [`.zenodo.json`](.zenodo.json).
+
 The original analysis pipeline is version **3.0.0**. Additional analyses for the
 revised manuscript are in [revision diagnostics 1.0.0](revision_diagnostics/README.md).
 See [software versions and reproducibility](docs/revision_release.md) for component
