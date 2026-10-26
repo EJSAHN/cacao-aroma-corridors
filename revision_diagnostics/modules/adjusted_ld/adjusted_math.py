@@ -23,7 +23,8 @@ def relationship_components(background_dosages,max_pcs=5):
     """Compute a centered dosage relationship kernel and standardized-locus PCs.
 
     Rows are selected background marker records; columns are samples.
-    K is ZZ'/sum(2p(1-p)), normalized to mean diagonal 1. PCs use loci scaled by
+    For centered marker-by-sample dosages Z, K is Z^T Z/sum(2p(1-p)),
+    normalized to mean diagonal 1. PCs use loci scaled by
     sqrt(2p(1-p)); these are continuous genetic PCs, not ancestry proportions.
     No marker selection, chromosome filtering, shrinkage or imputation occurs here.
     """

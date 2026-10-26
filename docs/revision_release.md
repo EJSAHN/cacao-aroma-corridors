@@ -21,8 +21,8 @@ additional analyses from the published fixed tables. These are different input
 routes: the diagnostics do not rerun genome alignment or reconstruct missing
 discovery-variant alleles.
 
-The exact original source archive and the diagnostics archive are preserved in
-Online Resource 2 (ESM 2). Their SHA-256 digests are recorded in
+The exact original source archive and the diagnostics documentation edition are
+supplied in Online Resource 2 (ESM 2). Their SHA-256 digests are recorded in
 [`code_archives.sha256`](code_archives.sha256). Third-party source workbooks are
 obtained from their providers and are not included in this repository.
 

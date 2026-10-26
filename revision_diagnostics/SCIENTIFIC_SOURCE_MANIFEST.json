@@ -119,7 +119,9 @@
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/adjusted_math.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "f02a3fae5bb8c4127f5b1b24036a861ab84ee4de1f90f08fe685dd2937b659d7"
+    "sha256": "24f57b1f133d2d3f225a7bea1249ba00ad139f25d110d7a233a4766ed1cada97",
+    "source_file_sha256": "f02a3fae5bb8c4127f5b1b24036a861ab84ee4de1f90f08fe685dd2937b659d7",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",

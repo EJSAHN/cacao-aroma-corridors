@@ -3,7 +3,7 @@
   "scope": "Portable downstream reproduction from complete published S1 and original workbook sources; no genome alignment rerun",
   "unit_tests": 45,
   "unit_tests_failed": 0,
-  "scientific_module_policy": "All calculation code, scientific settings and tests match the original verified revision-stage packages. Documentation-only changes retain their original source-file digests in SCIENTIFIC_SOURCE_MANIFEST.json.",
+  "scientific_module_policy": "Executable calculation code, scientific settings and tests match the original verified revision-stage packages. Documentation changes retain original source-file digests in SCIENTIFIC_SOURCE_MANIFEST.json.",
   "native_comparison_absolute_tolerance": 1e-08,
   "native_comparison_relative_tolerance": 1e-07,
   "tables": 110,
@@ -94,12 +94,21 @@
     "modules/adjusted_ld/test_model_setup.py": "e7b17b5a101d3b0b0be8a4f5c85ba9788d03194fa41fe956e22bb6a0d141c1f1"
   },
   "documentation_update": {
-    "scope": "Public documentation wording; calculation code, configuration and tests unchanged.",
+    "scope": "Public documentation wording and relationship-kernel docstring; executable calculation code, configuration and tests unchanged.",
     "source_files_with_updated_documentation": [
       "modules/genotypes/CODING_EVIDENCE.txt",
       "modules/adjusted_ld/ADJUSTED_MATH_NOTES.txt",
       "modules/background/BACKGROUND_METHODS_NOTES.txt"
     ],
-    "source_file_sha256_field": "For edited documentation, the original verified source-file digest is retained separately from the current file digest."
+    "source_file_sha256_field": "For edited documentation, the original verified source-file digest is retained separately from the current file digest.",
+    "python_docstring_edits": [
+      {
+        "file": "modules/adjusted_ld/adjusted_math.py",
+        "original_sha256": "f02a3fae5bb8c4127f5b1b24036a861ab84ee4de1f90f08fe685dd2937b659d7",
+        "current_sha256": "24f57b1f133d2d3f225a7bea1249ba00ad139f25d110d7a233a4766ed1cada97",
+        "description": "The relationship-kernel docstring uses Z^T Z for a marker-by-sample dosage matrix, consistent with the unchanged x.T @ x calculation.",
+        "executable_AST_unchanged": true
+      }
+    ]
   }
 }
