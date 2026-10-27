@@ -28,7 +28,7 @@ def select_background(markers,held_out_chromosome,bin_bp=100000,minimum=200):
 def fit_models(dosages,markers,held_out_chromosome):
     d=np.asarray(dosages,dtype=float)
     if d.ndim!=2 or len(d)!=len(markers) or not np.isfinite(d).all():
-        raise ValueError('Complete marker by sample dosages required; no imputation in CODE3')
+        raise ValueError('Complete marker-by-sample dosages are required; no imputation')
     if d.shape[1]<50:raise ValueError('At least 50 samples required')
     selected=select_background(markers,held_out_chromosome,SETTINGS['background_bin_bp'],SETTINGS['minimum_background_markers'])
     r=relationship_components(d[selected],max_pcs=5)

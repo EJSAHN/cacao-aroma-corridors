@@ -11,13 +11,11 @@ native binary and the whole cacao reference. Native executables separately pass 
 seven-case software smoke test before processing cacao tags; its verified cache
 key includes executable hashes and settings.
 
-The development acceptance comparison re-parsed eight actual source workbooks and
+The source-reader comparison re-parsed eight source workbooks and
 recomputed downstream results using preserved reference/catalog/mapping decisions
-as fixtures when whole reference/native execution was unavailable in that runtime.
-This establishes the integrated numerical and source-reader interface behavior,
-not an independent repetition of whole-genome alignment. Full numerical
-reproduction is evaluated by a raw-input run followed by comparison with the
-designated reference outputs on the target Windows environment.
+as fixtures. It checked source parsing and downstream calculations; reference
+alignment was outside its scope. Full numerical reproduction is evaluated by a
+raw-input run followed by comparison with the reference outputs.
 
 The optional `verify-results` operation compares every non-README worksheet of six
 coverage workbooks and five dosage workbooks. Record keys, sample membership,

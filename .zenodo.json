@@ -1,6 +1,6 @@
 {
   "title": "Cacao marker harmonization and revision diagnostics",
-  "version": "r1-2026.10.26",
+  "version": "r1-2026.10.27",
   "upload_type": "software",
   "access_right": "open",
   "license": "mit",
@@ -11,7 +11,7 @@
       "orcid": "0000-0003-4447-4104"
     }
   ],
-  "description": "<p>Analysis software for the study <em>Coordinate conventions and marker density shape coverage of cacao aroma loci</em>.</p><p>This repository release contains two separately versioned components: the original cacao marker harmonization pipeline (3.0.0) and revision diagnostics (1.0.0). The original pipeline analyzes marker identity, reference-derived SNP coordinates, positional representation, matched-background sensitivity and conditional unphased genotype-dosage correlations. The diagnostics add own-filter recovery, identifier-link and coordinate audits, adjusted genotype correlations, per-peak coordinate anchors and gene-background sensitivity analyses.</p><p>The original pipeline starts from provider workbooks and the pinned Criollo v2 reference. The diagnostics use the complete published Supplementary Data S1 and original provider workbooks; they do not repeat genome alignment. Component instructions, provenance and validation records are included. Third-party source workbooks and reference assets must be obtained separately. Figure-generation code is supplied separately in Online Resource 6.</p><p>The repository release identifier is r1-2026.10.26. Component versions remain 3.0.0 and 1.0.0.</p>",
+  "description": "<p>Analysis software for <em>Coordinate conventions and marker density shape coverage of cacao aroma loci</em>.</p><p>The marker harmonization pipeline (3.0.0) analyzes marker identity, reference-derived SNP coordinates, positional coverage, matched gene backgrounds and conditional unphased genotype-dosage correlations. Revision diagnostics (1.0.0) evaluate filter-specific recovery, identifier links, coordinate conventions, adjusted genotype correlations, peak-level coordinate anchors and sensitivity to gene-background matching.</p><p>The harmonization pipeline starts from provider workbooks and the Criollo v2 reference. The diagnostics use Supplementary Data S1 and the provider workbooks. Instructions specify the inputs, analysis settings and validation checks. Source workbooks and reference files are obtained from their providers.</p>",
   "keywords": [
     "Theobroma cacao",
     "marker harmonization",

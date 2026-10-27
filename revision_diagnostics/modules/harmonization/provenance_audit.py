@@ -1,4 +1,4 @@
-"""Independent source-label and positional-recovery audit for TGG revision CODE1.
+"""Audit source labels and positional recovery.
 
 Raw source labels remain authoritative. A separate provisional sensitivity flags
 filter-like values in the method column; it never silently rewrites the source.
@@ -385,6 +385,6 @@ def run(ctx):
         'proxy_LD_evaluated': False,
         'variant_identity_proven_from_coordinate_match': False,
     }
-    ctx.note('Raw G7/MAF5/SSR/NA labels are preserved. Provisional method-field sensitivity is not a correction approved for the manuscript.')
+    ctx.note('Raw G7/MAF5/SSR/NA labels are preserved. Provisional method-field sensitivity is reported separately from the source-label analysis.')
     ctx.note('Exact recovery denotes an identical chromosome-position, not allele identity or independent validation. Missing-peak bridge classifications are candidate evidence because source peaks lack marker IDs and alleles.')
     ctx.note('This stage recomputes positional recovery from frozen marker ledgers; it does not rerun alignment or compute adjusted LD/proxy tagging.')

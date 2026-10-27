@@ -1,6 +1,6 @@
-"""Descriptive annotated-gene background replay and prespecified sensitivity.
+"""Descriptive annotated-gene backgrounds and prespecified sensitivity.
 
-Coverage and sampling algorithms follow the submitted MIT-licensed
+Coverage and sampling algorithms follow the MIT-licensed
 cacao-marker-harmonization 3.0.0 coverage/{analysis,numerics}.py by Ezekiel Ahn.
 This module independently rebuilds inputs and validates the frozen outputs.
 """

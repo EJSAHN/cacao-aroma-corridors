@@ -1,4 +1,4 @@
-"""Portable reproduction of the cacao marker revision diagnostics."""
+"""Cacao marker provenance, genotype-correlation and gene-background analyses."""
 import argparse
 import csv
 import hashlib
@@ -163,7 +163,7 @@ def run_one(args):
                   elapsed_seconds=round(time.monotonic() - started, 3),
                   check_count=len(ctx.checks), failed_checks=failed, error=error,
                   scientific_summaries=ctx.summary, interpretation_notes=ctx.notes,
-                  scope='Reproduces revision calculations from the published fixed tables and original source workbooks. Does not repeat genome alignment.')
+                  scope='Marker provenance, coordinate, genotype-correlation and gene-background analyses from published tables and source workbooks.')
     write_json(out / 'RUN_SUMMARY.json', report)
     write_json(out / 'CHECKS.json', ctx.checks)
     write_json(out / 'INPUT_MANIFEST.json', ctx.input_audit)

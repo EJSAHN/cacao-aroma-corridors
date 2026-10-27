@@ -1,4 +1,4 @@
-"""Boundary and independent-reference checks for new CODE2 LD diagnostics."""
+"""Boundary and independent-reference checks for dosage-correlation diagnostics."""
 import unittest
 from types import SimpleNamespace
 import numpy as np

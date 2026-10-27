@@ -103,7 +103,7 @@ def run(ctx):
     ctx.check('coordinate_decision_source_rows', set(decision_by_source) ==
               {row for resource, row in old if resource == 'Diversity'}, True)
 
-    # R1 C1: identify query positions lost, then show every contributing marker.
+    # Identify query positions lost and every contributing marker.
     div_a = defaultdict(list)
     div_b = set()
     for r in ledger:
@@ -160,7 +160,7 @@ def run(ctx):
                                    distinct_peak_positions=len({r['query_id'] for r in rr})))
     ctx.write_csv('coordinate_diversity_lost_reason_summary.csv', reason_summary)
 
-    # R1 C2: reconstruct the declared unique-reference-key bridge from all rows.
+    # Reconstruct the unique-reference-key bridge from all rows.
     link_rows = []
     for o in inventory:
         resource = o['resource']
@@ -251,7 +251,7 @@ def run(ctx):
     ctx.write_csv('coordinate_identifier_link_summary.csv', link_summary)
     ctx.write_csv('coordinate_join_vs_alignment_summary.csv', comparison_summary)
 
-    # R1 C3: diagnostic exact subset reconstructed independently of its aggregate.
+    # Reconstruct the exact-mapped diagnostic subset from individual records.
     convention_rows = []
 
     def add_convention(scope, resource, o, d, source_row, refchrom, snp, tagstart, tagend, strand):

@@ -1,6 +1,6 @@
 """Restricted, read-only BIFF8 value reader.
 
-Pinned-source reader adapted from submitted cacao_marker_harmonization v3.0.0.
+Reader adapted from cacao_marker_harmonization v3.0.0.
 Used directly for the two frozen Nacional BIFF8 exports. Supports the OLE regular-stream layout and
 SST/NUMBER/RK/MULRK/LABELSST/BOOLERR cells found in the supplied Nacional exports.
 It does not evaluate formulas, decrypt files, repair files, or silently ignore

@@ -4,18 +4,16 @@ Version 1.0.0 reproduces the additional analyses of marker provenance, coordinat
 harmonization, genotype concordance, adjusted genotype correlations, peak-level
 coordinate anchors, and matched annotated-gene backgrounds.
 
-These analyses support the revised manuscript **Coordinate conventions and marker
-density shape coverage of cacao aroma loci**. The original submitted manuscript was
-**Sequence-based harmonization of cacao marker resources clarifies coverage of
-aroma-associated loci**. The earlier dataset title uses **Coordinate harmonization
-and marker density shape the representation of cacao aroma loci**. These titles
-identify successive descriptions of the same study, not separate datasets.
+These analyses support **Coordinate conventions and marker density shape coverage
+of cacao aroma loci**. Versioned source archives are available from
+[GitHub releases](https://github.com/EJSAHN/cacao-aroma-corridors/releases) and
+[Zenodo](https://doi.org/10.5281/zenodo.23677321).
 
-The original **cacao-marker-harmonization 3.0.0** pipeline remains the source-to-
-reference analysis. This companion uses its published fixed tables and the original
-workbooks to reproduce the additional analyses. The calculation modules and their
-source provenance are listed in `SCIENTIFIC_SOURCE_MANIFEST.json`. The entry point accepts explicit
-input and output paths.
+The **cacao-marker-harmonization 3.0.0** pipeline performs the source-to-reference
+analysis. This component uses its published fixed tables and the provider
+workbooks. Calculation modules and source digests are listed in
+`SCIENTIFIC_SOURCE_MANIFEST.json`. The entry point accepts explicit input and
+output paths.
 
 ## Requirements and inputs
 
@@ -26,9 +24,15 @@ and no data are downloaded by this companion. Genome alignment is not repeated h
 Obtain the complete **Supplementary Data S1, version 1.0.0** workbook identified by
 the original study at https://doi.org/10.5281/zenodo.22755806. Its SHA-256 is
 `f80b33927090d11b804a7dffd09333945a0fecf58243f44aa8bbbdc9dac16fbb`.
-The `Contents` worksheet maps original output workbooks and worksheets to the public
-catalog. The displayed workbook filename may retain an earlier journal abbreviation;
-content identity is determined by the digest and catalog, not that abbreviation.
+The `Contents` worksheet maps output workbooks and worksheets to the public catalog.
+The workbook's identity is checked against the expected digest.
+
+Zenodo titles this record **Supplementary Data S1 for "Sequence-based harmonization
+of cacao marker resources clarifies coverage of aroma-associated loci"**. The
+[NLM Dataset Catalog](https://datasetcatalog.nlm.nih.gov/dataset?q=0003307804)
+indexes the same DOI as **Supplementary Data S1 for "Coordinate harmonization and
+marker density shape the representation of cacao aroma loci"**. The DOI and
+workbook digest identify the data used here.
 
 Place unedited source workbooks at the relative paths in `DATA_SOURCES.md`. Original
 provider rights remain separate from this code's MIT license. Source workbooks and
@@ -45,7 +49,7 @@ python -B run_revision.py --stage all --supplement-s1 "<Supplementary_Data_S1.xl
 Alternatively choose one stage: `harmonization`, `genotypes`, `adjusted_ld`, or
 `background`. The `background` stage requires only Supplementary Data S1 and may
 omit `--source-root`. Keep outputs separate from source data and code. Each stage
-creates a new directory and ZIP with tables, checks, summaries and manifests.
+creates a new directory and ZIP with CSV tables, JSON summaries, checks and manifests.
 All source data and scientific modules are read-only. A failed check returns a
 nonzero exit code and retains diagnostic information.
 
@@ -67,11 +71,7 @@ published S1 workbook against its expected SHA-256 digest.
 | Harmonization | Source-filter denominators, own-filter recovery, sequence mapping versus identifier links, mapped strand, quotas and tag lengths | Filter and recovery summaries, per-peak coverage, identifier-link tables, mapping-rejection evidence |
 | Genotypes | Literal source calls, between-export differences, fixed marker cohorts and same-tag sensitivity | Genotype and sample QC, discordant calls, unadjusted pair and neighbor summaries |
 | Adjusted LD | Leave-one-chromosome-out PC and kinship sensitivity; shared-sample cross-export coordinate anchors | Adjusted distance profiles, neighbor summaries, peak assessment and model diagnostics |
-| Background | Original-model replay and length/density/radius sensitivity | Model status, draw counts, balance, percentiles and matching strata |
-
-The module directories preserve their original file names to retain traceability.
-`CODE1` through `CODE4` labels in the source manifest identify the verified author
-run packages; they are not additional software dependencies.
+| Background | Matched-gene backgrounds and length/density/radius sensitivity | Model status, draw counts, balance, percentiles and matching strata |
 
 ## Interpretation
 
@@ -96,18 +96,15 @@ python -B -m unittest discover -s tests -p "test_*.py"
 ```
 
 The scientific tests are available in their respective module directories.
-`VALIDATION.json` records the comparison of the four stages with the original
-Windows analysis results. Validation covers the downstream analyses described
-here.
+`VALIDATION.json` records comparisons across all four stages against reference
+results. These comparisons cover downstream calculations from fixed tables.
 
 ## Versions and citation
 
-The original analysis software is version **3.0.0**; this companion is version
-**1.0.0**; the original figure-generation package is a separate version **1.0.0**.
-Those numbers refer to different software components. The repository name
-`cacao-aroma-corridors` is a stable project identifier, not a second analysis.
-The earlier dataset title is retained in the provenance of the original data
-record and refers to the same study and fixed table export.
+The marker-harmonization pipeline is version **3.0.0** and the diagnostics are
+version **1.0.0**. Select and cite the specific software release used from
+https://doi.org/10.5281/zenodo.23677321. Cite Supplementary Data S1 using
+https://doi.org/10.5281/zenodo.22755806.
 
 Code is MIT licensed. Cite the original data sources as well as the software.
 Software citation metadata is provided in `CITATION.cff`.

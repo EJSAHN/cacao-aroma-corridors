@@ -102,7 +102,7 @@ def classification(record,eligible,valid,best):
     return 'TARGET_ABSENT_DONOR_COORDINATE_ANCHOR_HIGH_NEIGHBOR' if high else 'TARGET_ABSENT_DONOR_NEIGHBORS_BELOW_R2_0_8'
 
 def raw_pair_correlations(xrows,yrows,minimum=50):
-    """Direct integer-sum Pearson formula, identical to CODE2 for complete calls."""
+    """Direct integer-sum Pearson formula for complete calls."""
     x,y=np.asarray(xrows,dtype=float),np.asarray(yrows,dtype=float)
     if x.ndim!=2 or x.shape!=y.shape or not np.isfinite(x).all() or not np.isfinite(y).all():
         raise ValueError('Complete, aligned pair matrices required')

@@ -3,19 +3,25 @@
     "stage": "harmonization",
     "file": "modules/harmonization/provenance_audit.py",
     "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
-    "sha256": "5adf607a44e8daef3256e08b1a7801e76a4ac79ab7d0b9c740ffe74ab499098f"
+    "sha256": "8abfb3daa0375223e356d445ece701a570aa779a3b5eca8ed3f6b803dfe67c09",
+    "source_file_sha256": "5adf607a44e8daef3256e08b1a7801e76a4ac79ab7d0b9c740ffe74ab499098f",
+    "change_type": "documentation_only"
   },
   {
     "stage": "harmonization",
     "file": "modules/harmonization/coordinate_audit.py",
     "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
-    "sha256": "a2fdba8168c7629629c6b00ac6d55eb37aab2d3dc8e0881885cf0c315b269c35"
+    "sha256": "c6905ded3a7eb0398336b2eb6cc38990a4ca5516f9562c8f71dba1cf9d38a4c5",
+    "source_file_sha256": "a2fdba8168c7629629c6b00ac6d55eb37aab2d3dc8e0881885cf0c315b269c35",
+    "change_type": "documentation_only"
   },
   {
     "stage": "harmonization",
     "file": "modules/harmonization/methods_audit.py",
     "source_package": "CACAO_TGG_R1_CODE1_v1.0.0.zip",
-    "sha256": "b49940c8b4ca7e2e43fa5ba5af1babf999879753539177ca73dd7d8e6cbf9f9d"
+    "sha256": "2d02b7f28cd7d7315ec19ddd243de5e442240278a05639a2605e78035f795c0c",
+    "source_file_sha256": "b49940c8b4ca7e2e43fa5ba5af1babf999879753539177ca73dd7d8e6cbf9f9d",
+    "change_type": "documentation_only"
   },
   {
     "stage": "harmonization",
@@ -39,19 +45,25 @@
     "stage": "genotypes",
     "file": "modules/genotypes/genotype_audit.py",
     "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
-    "sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1"
+    "sha256": "aadc5abef55c411ac2a95e5fa331c792f745d54a3cc609900bb7841f3397ac0b",
+    "source_file_sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1",
+    "change_type": "documentation_only"
   },
   {
     "stage": "genotypes",
     "file": "modules/genotypes/ld_audit.py",
     "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
-    "sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d"
+    "sha256": "b31287e6e5aee348cab127218f44751ab8a1514559764d235a001e73c7038699",
+    "source_file_sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d",
+    "change_type": "documentation_only"
   },
   {
     "stage": "genotypes",
     "file": "modules/genotypes/biff8_read.py",
     "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
-    "sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b"
+    "sha256": "eae783be9460d6e24dae314a9c626163420311b8e685f96e86052a0654f517d0",
+    "source_file_sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b",
+    "change_type": "documentation_only"
   },
   {
     "stage": "genotypes",
@@ -69,7 +81,9 @@
     "stage": "genotypes",
     "file": "modules/genotypes/test_ld_audit.py",
     "source_package": "CACAO_TGG_R1_CODE2_v1.0.0.zip",
-    "sha256": "c4b3e6c5fc78f210bd0b5ba2c5ebeb967d0b941b99ab2dc164f87b966413d704"
+    "sha256": "2f75ed2c80e181dec7356b54a6d9dd0a60d3a9d855b58d97c1b3788294c74054",
+    "source_file_sha256": "c4b3e6c5fc78f210bd0b5ba2c5ebeb967d0b941b99ab2dc164f87b966413d704",
+    "change_type": "documentation_only"
   },
   {
     "stage": "genotypes",
@@ -95,19 +109,25 @@
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/genotype_audit.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1"
+    "sha256": "aadc5abef55c411ac2a95e5fa331c792f745d54a3cc609900bb7841f3397ac0b",
+    "source_file_sha256": "dcb17774e3ad13a4bcd0650136daaf18a5cd247cd9225ebf9cb2faf270653ae1",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/ld_audit.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d"
+    "sha256": "b31287e6e5aee348cab127218f44751ab8a1514559764d235a001e73c7038699",
+    "source_file_sha256": "67a85884cd52e30cfda5f9880af2819caf25a08c6d7eed6a1407bca9559d734d",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/biff8_read.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b"
+    "sha256": "eae783be9460d6e24dae314a9c626163420311b8e685f96e86052a0654f517d0",
+    "source_file_sha256": "89ce1c89b713c66dba919642a53662b5d93df53f873eccf0f58b802755589a3b",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
@@ -119,7 +139,7 @@
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/adjusted_math.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "24f57b1f133d2d3f225a7bea1249ba00ad139f25d110d7a233a4766ed1cada97",
+    "sha256": "623c1e2ac6dfaa1897e8bb54364bb8010fee5eecb9a063a29712b20752170e82",
     "source_file_sha256": "f02a3fae5bb8c4127f5b1b24036a861ab84ee4de1f90f08fe685dd2937b659d7",
     "change_type": "documentation_only"
   },
@@ -127,19 +147,25 @@
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/model_setup.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "ab09726eebc2f1215e2655db877afb98fbc99a071fe54bacab7a8257c78790fa"
+    "sha256": "33a06467ca714d5b6e662f516d98fa1c90bf6133e4b83716225b3190735e6d09",
+    "source_file_sha256": "ab09726eebc2f1215e2655db877afb98fbc99a071fe54bacab7a8257c78790fa",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/within_adjusted_audit.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "b2626e3f69c40d7e9ca2e2dc83438a39a57d262fa2610e9413820e5157e730d3"
+    "sha256": "7d4ff137c0429427dfa8d58bf9a81fc8462427ec82b14cfdcfa749c77227f958",
+    "source_file_sha256": "b2626e3f69c40d7e9ca2e2dc83438a39a57d262fa2610e9413820e5157e730d3",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
     "file": "modules/adjusted_ld/cross_peak_audit.py",
     "source_package": "CACAO_TGG_R1_CODE3_v1.0.0.zip",
-    "sha256": "5fcb3827ff847d9e89601eb863ed9e11ee2698d66aa15756e69bba0aabc22b4a"
+    "sha256": "882d27dff686d76b8f4cf2a954d1041430c18dda1eba4af8b2a001bce1b86530",
+    "source_file_sha256": "5fcb3827ff847d9e89601eb863ed9e11ee2698d66aa15756e69bba0aabc22b4a",
+    "change_type": "documentation_only"
   },
   {
     "stage": "adjusted_ld",
@@ -195,7 +221,9 @@
     "stage": "background",
     "file": "modules/background/background_audit.py",
     "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
-    "sha256": "8126aaf1d0b52b85b791bd5c76308044ae00d06321cb25b2df4961169fafa2e7"
+    "sha256": "13ad55066dd9e49cedae4ba5a218029803c97746b2a0786dea420ecfaeef79b1",
+    "source_file_sha256": "8126aaf1d0b52b85b791bd5c76308044ae00d06321cb25b2df4961169fafa2e7",
+    "change_type": "documentation_only"
   },
   {
     "stage": "background",
@@ -219,7 +247,7 @@
     "stage": "background",
     "file": "modules/background/BACKGROUND_METHODS_NOTES.txt",
     "source_package": "CACAO_TGG_R1_CODE4_v1.0.0.zip",
-    "sha256": "7f56432cd6f7e51b2beabcf99dc7e3147243be81b9d96939038d2829ed6eff39",
+    "sha256": "a748baa135a707f5721fe0407d402b30b57b4c81469d7e3d457c95251080178b",
     "source_file_sha256": "0903e7120b967c8e9084a968b7214c5c5cf67542cb5b9b85a4edbd703eb21046",
     "change_type": "documentation_only"
   },

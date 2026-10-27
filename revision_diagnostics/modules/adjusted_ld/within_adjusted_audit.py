@@ -1,8 +1,8 @@
-"""Within-panel conditional adjusted dosage r2 on the fixed CODE2 cohorts.
+"""Within-panel conditional adjusted dosage r2 on fixed quality-controlled cohorts.
 
 Models are estimated using chromosomes other than the tested chromosome.
-RAW retains the exact submitted complete-case arithmetic after a separate
-projection-equivalence check. No alleles, coordinates or QC cohorts are edited.
+RAW uses complete-case arithmetic after a separate projection-equivalence check.
+Alleles, coordinates and QC cohorts are held fixed.
 """
 from collections import defaultdict
 import numpy as np
@@ -95,7 +95,7 @@ def run(ctx):
         masks={POLICIES[0]:np.ones(len(pairs),bool),POLICIES[1]:~same_family,POLICIES[2]:~same_span}
         for group,sample_ids in panel.groups.items():
             d=np.asarray(panel.dosage[:,sample_ids],float)
-            if not np.isfinite(d).all():raise ValueError('CODE3 within-panel calls must be complete; no imputation')
+            if not np.isfinite(d).all():raise ValueError('Within-panel calls must be complete; no imputation')
             values={method:dict(r2=np.full(len(pairs),np.nan),n=np.zeros(len(pairs),np.int32),status=np.ones(len(pairs),np.uint8)) for method in METHODS}
             covered=np.zeros(len(pairs),np.int8)
             for chromosome in cfg['chromosomes']:
@@ -176,7 +176,7 @@ def run(ctx):
     ctx.summary['within_adjusted_audit']=dict(scope=SCOPE,methods=list(METHODS),pair_policies=list(POLICIES),
         panel_inventories=inventory,training_fits=len(background_rows),frozen_RAW_difference_cells=len(differences),
         primary_neighbor_summaries=[r for r in summaries if r['sample_group']=='all_qc_samples' and r['pair_policy']=='ALL_LOCAL_PAIRS'],
-        interpretation='PC and regularized covariance sensitivity estimates; no new phenotype validation or biological coding confirmation.')
-    ctx.note('Within-panel adjusted LD preserves the submitted fixed QC markers and inclusive/omission sample groups. Each chromosome uses background markers only from other chromosomes.')
-    ctx.note('Kinship metrics use mean-diagonal-one dosage covariance plus explicit ridge terms; PC2/PC5 are genetic-PC residual correlations, not inferred ancestry memberships. No LDcorSV/R execution is claimed.')
-    ctx.note('Adjusted best-neighbor ties within 1e-12 select the lowest fixed marker index. Raw neighbor results retain the submitted exact arithmetic for frozen comparison.')
+        interpretation='PC and regularized covariance sensitivity estimates; phenotype effects and biological coding remain unvalidated.')
+    ctx.note('Within-panel adjusted LD uses fixed QC markers and inclusive/omission sample groups. Each chromosome uses background markers only from other chromosomes.')
+    ctx.note('Kinship metrics use mean-diagonal-one dosage covariance plus explicit ridge terms. PC2/PC5 are residual correlations after adjustment for two or five genetic PCs.')
+    ctx.note('Adjusted best-neighbor ties within 1e-12 select the lowest fixed marker index. Raw neighbor correlations use exact complete-case arithmetic.')

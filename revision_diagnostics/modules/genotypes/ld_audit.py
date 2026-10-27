@@ -1,4 +1,4 @@
-"""Fresh conditional dosage LD; source-tag sensitivity; peak coordinate anchors.
+"""Conditional dosage correlations, source-tag sensitivity and peak coordinate anchors.
 A/M/C = 0/1/2 is an explicit unproven interpretation. No structure adjustment.
 """
 from collections import Counter, defaultdict
@@ -203,7 +203,7 @@ def run(ctx):
     peak_tables(ctx,ctx.genotype_panels,lookup)
     ctx.summary['ld_audit']=dict(analysis_scope=SCOPE,same_tag_audit=tag_audit,validation_difference_cells=len(differences),peak_classification_rows=1415*9,
       adjusted_ld_status='DEFERRED_UNTIL_CODING_EVIDENCE_REVIEW',first_bin_profiles=[r for r in profiles if r['upper_bp_inclusive']==1000],neighbor_50kb_summaries=summaries)
-    ctx.note('LD is conditional on A/M/C = 0/1/2. Empirical QC does not prove symbol semantics. No kinship/structure adjustment is fitted in CODE2.')
+    ctx.note('LD is conditional on A/M/C = 0/1/2. Empirical QC does not prove symbol semantics. This module reports unadjusted correlations.')
     ctx.note('A peak coordinate anchor is an observed genotype marker at a published position; variant identity/allele equivalence is unproven. Absent focal genotypes are NOT_ASSESSABLE, never low LD.')
-    ctx.note('Focal genotype availability is assessed within each target panel. Cross-export focal/partner combinations are not computed in CODE2.')
+    ctx.note('Focal genotype availability is assessed within each target panel. This module evaluates within-panel focal/partner combinations.')
     ctx.note('Same-source-tag sensitivity removes pairs sharing the identifier prefix before terminal --SNPindex. Identical aligned tag spans provide corroboration and an additional, broader exclusion sensitivity (different source tag identifiers can align to the same span).')

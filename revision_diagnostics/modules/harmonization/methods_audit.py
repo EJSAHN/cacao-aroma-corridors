@@ -1,6 +1,6 @@
 """Tag length, unique-position quota and marker composition checks.
 
-Reads frozen evidence only. This module performs no new alignment or LD analysis.
+Reads fixed evidence tables for tag lengths, quotas and marker composition.
 """
 from bisect import bisect_left, bisect_right
 from collections import Counter, defaultdict
@@ -293,4 +293,4 @@ def run(ctx):
     mono=monoterpene(ctx,positions,records,ids,canonical,inventory)
     ctx.summary['methods_audit']=dict(tag_lengths=tags,marker_count_summary=counts,
                                      marker_set_overlap=overlap,monoterpene_coverage=mono,
-                                     scope='Tag lengths, unique-position quotas and physical marker composition. No new alignment or LD analysis.')
+                                     scope='Tag lengths, unique-position quotas and physical marker composition.')

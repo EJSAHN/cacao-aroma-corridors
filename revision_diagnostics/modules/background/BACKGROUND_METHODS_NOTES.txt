@@ -15,11 +15,10 @@ Target sets remain fixed when a matching model is infeasible.
 Matching sensitivity
 The length-only comparator matches chromosome, gene biotype and length bin.
 The density comparator additionally matches local annotated-gene density bin.
-The additional grid is a revision sensitivity grid, not a reconstruction of
-an originally prespecified optimization. The original three density bins and
-+/-250-kb neighborhood are retained as the reference configuration; no claim
-is made that these are biologically optimal. Coarser/finer bins and narrower/
-wider neighborhoods examine dependence on those choices.
+The sensitivity grid evaluates alternative matching definitions. Three density
+bins and a +/-250-kb neighborhood define the reference configuration.
+Coarser/finer bins and narrower/wider neighborhoods examine dependence on those
+choices. The reference configuration is not a biologically optimized setting.
 
 The neighborhood counts all eligible annotated gene midpoints on the same
 chromosome, excluding only the focal gene itself. It is not the number of

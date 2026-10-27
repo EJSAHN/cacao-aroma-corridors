@@ -1,4 +1,4 @@
-"""CODE2 genotype audit. Core QC is adapted from submitted v3.0.0 ld/genotypes.py.
+"""Genotype-call audit using cacao-marker-harmonization 3.0.0 quality-control rules.
 No genotype is repaired; A/M/C dosage interpretation remains conditional.
 """
 from __future__ import annotations
@@ -218,7 +218,7 @@ def canonical_marker(value):
 
 
 def read_matrix(path, name):
-    """Read literal cells, using the submitted restricted BIFF8 parser, no edits."""
+    """Read literal cell values with the restricted BIFF8 parser."""
     from biff8_read import BiffBook
     book = BiffBook(path)
     if len(book.sheets) != 1: raise DataError('Expected one frozen matrix sheet: '+name)
@@ -392,7 +392,7 @@ def run(ctx):
         panels={name:p.metadata for name,p in panels.items()},
         sequencing_depth_available=False,
         interpretation='Post-omission equality is algebraic agreement of shared exported cells, not independent biological replication.')
-    ctx.note('A/M/C state counts, literal A/C allele declarations, and conditional M fractions are reported separately; no new codebook or biological coding validation was inferred.')
+    ctx.note('A/M/C state counts, literal A/C allele declarations, and conditional M fractions are reported separately. Exporter coding remains unverified.')
     ctx.note('SNA604 and L17H53 remain in primary analyses. Omission is sensitivity only. Missingness and conditional heterozygosity do not identify the cause of discordance; read depth is unavailable.')
     ctx.genotype_matrices=matrices;ctx.genotype_panels=panels;ctx.common_genotype_panels=common_panels
     return {'matrices':matrices,'panels':panels,'common_panels':common_panels}

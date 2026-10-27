@@ -1,18 +1,21 @@
 # Cacao marker harmonization
 
-Repository release **r1-2026.10.26** bundles the two analysis components below.
-Zenodo archive metadata are supplied in [`.zenodo.json`](.zenodo.json).
+This repository analyzes marker identity, reference-derived SNP coordinates,
+physical coverage and conditional genotype-dosage correlations in public cacao
+resources. The marker-harmonization pipeline exports values-only Excel workbooks;
+the diagnostics component exports CSV tables and JSON summaries.
 
-The original analysis pipeline is version **3.0.0**. Additional analyses for the
-revised manuscript are in [revision diagnostics 1.0.0](revision_diagnostics/README.md).
-See [software versions and reproducibility](docs/revision_release.md) for component
-versions, validation and source archives.
+The marker-harmonization pipeline **3.0.0** starts from provider workbooks and the
+Criollo v2 reference. The [diagnostics component](revision_diagnostics/README.md)
+**1.0.0** evaluates coordinate provenance, genotype concordance, adjusted
+correlations and matched gene backgrounds using fixed analysis tables.
 
-The original pipeline analyzes marker identity, reference-derived SNP coordinates,
-positional representation and conditional genotype-dosage correlations in public
-cacao resources. Numerical deliverables are values-only Excel workbooks.
-No figures, phenotype predictions, new GWAS, imputed genotypes or reconstructed
-haplotypes are generated.
+This software supports **Coordinate conventions and marker density shape coverage
+of cacao aroma loci**. Versioned source archives are available from
+[GitHub releases](https://github.com/EJSAHN/cacao-aroma-corridors/releases) and
+[Zenodo](https://doi.org/10.5281/zenodo.23677321). Cite the specific release used
+for an analysis. See [versions and reproducibility](docs/revision_release.md) for
+component versions, input routes and validation.
 
 ## Scope
 
@@ -122,17 +125,10 @@ Third-party input spreadsheets are not redistributed. Retain source identifiers,
 original worksheet names and acquisition details when reusing results. Software
 citation metadata is provided in `CITATION.cff`.
 
-## Analyses for the revised manuscript
+## Diagnostics
 
-The revised manuscript is **Coordinate conventions and marker density shape coverage
-of cacao aroma loci**. The original alignment and source-to-table pipeline remains
-version **3.0.0**. Additional analyses are supplied separately as
-[revision diagnostics version 1.0.0](revision_diagnostics/README.md). They reproduce
-own-filter recovery, identifier-link and coordinate audits, conditional adjusted
-genotype correlations, per-peak coordinate anchors and gene-background sensitivity
-from the published fixed tables and original source workbooks.
-
-The companion accepts explicit input and output paths and includes validation
-against the original Windows analysis results. Figure production is distributed
-separately in Online Resource 6. Component versions and source provenance are
-described in the [version documentation](docs/revision_release.md).
+The [diagnostics component](revision_diagnostics/README.md) evaluates recovery of
+peaks assigned to each marker filter, identifier links, coordinate conventions,
+adjusted genotype correlations, per-peak coordinate anchors and gene-background
+sensitivity. It uses the published fixed tables and provider workbooks, with
+explicit input and output paths.

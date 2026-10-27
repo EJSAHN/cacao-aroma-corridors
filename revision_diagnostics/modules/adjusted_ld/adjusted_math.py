@@ -4,7 +4,7 @@ Scientific definitions: Mangin et al. (2012), DOI 10.1038/hdy.2011.73.
 For covariance V and nuisance design C=[1,S], the residual precision is
 P=V^-1 - V^-1 C (C' V^-1 C)^+ C' V^-1. Squared normalized x' P y
 is the generalized partial correlation. The implementation below uses whitening
-and an orthogonal nuisance projection, not a translation of LDcorSV R code.
+and an orthogonal nuisance projection.
 The caller chooses the background markers, covariance regularization and PCs.
 Complete calls are required: missing values are rejected, never filled with zero.
 """
