@@ -27,12 +27,12 @@ the original study at https://doi.org/10.5281/zenodo.22755806. Its SHA-256 is
 The `Contents` worksheet maps output workbooks and worksheets to the public catalog.
 The workbook's identity is checked against the expected digest.
 
-Zenodo titles this record **Supplementary Data S1 for "Sequence-based harmonization
-of cacao marker resources clarifies coverage of aroma-associated loci"**. The
-[NLM Dataset Catalog](https://datasetcatalog.nlm.nih.gov/dataset?q=0003307804)
-indexes the same DOI as **Supplementary Data S1 for "Coordinate harmonization and
-marker density shape the representation of cacao aroma loci"**. The DOI and
-workbook digest identify the data used here.
+Zenodo titles this record **Supplementary Data S1 for "Coordinate conventions and
+marker density shape coverage of cacao aroma loci"**. The same DOI has been indexed
+in the [NLM Dataset Catalog](https://datasetcatalog.nlm.nih.gov/dataset?q=0003307804)
+as **Supplementary Data S1 for "Coordinate harmonization and marker density shape
+the representation of cacao aroma loci"**. The DOI and workbook digest identify
+the data used here.
 
 Place unedited source workbooks at the relative paths in `DATA_SOURCES.md`. Original
 provider rights remain separate from this code's MIT license. Source workbooks and
